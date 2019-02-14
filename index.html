@@ -1,40 +1,216 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title>Abeer Sait Portofilio</title>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <title>Abir Seth Portfolio</title>
+  <meta name="description" content="My name is Abir Seth, born on July 11 1997. I had interest in web development since I was 14 and continued my jpurney since then">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Quicksand|Righteous" rel="stylesheet">
+  <link rel="shortcut icon" href="#" type="#">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/script.js"></script>
-	<script type="text/javascript">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script type="text/javascript">
+    //<![CDATA[
       $(window).load(function() {
         $("body").removeClass("loading");
       })
+    //]]>
   </script>
-
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
-
-
 <body class="loading home devant">
-
 <nav>
   <svg class="nav" id="right" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
   <svg class="nav" id="bottom" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
   <svg class="nav" id="left" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
   <svg class="nav" id="top" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+
+<a class="btn btn-4" >Check Portfolio</a>
+ 
+
 </nav>
 
-<section id="home" class="home panel">
-  <h1>Abeer Sait <br></h1><small>Full Stack Web Developer</small>
+<section id="home" class="home panel done">
+  <h1>Abir Yusuf Seth <br><small>Full-Stack Web Developer</small></h1>
+  
+
+   
   <svg id="home_animation" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+  <svg id="home_to_profile" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+
 </section>
+
+
 <div id="particles-js" style="background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;">
-		</div>
+    </div>
+
+<script>
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+</script>
 
 
+<svg id="profile_to_home" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="img_principale">
+  <svg id="profile_img" width="120" height="120" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+<section id="profile">
+  <div class="principale">
+    <h2><small>About Me</small></h2>
+    <p>I'm Abir Sait, born on 11th July 1997. <br>Self-motivated Full Stack Web Developer and Computer Scientist that
+can help contribute to your profitability. A quick learner who is looking
+for the right opportunity to prove herself preferably as a junior
+back-end developer.I spend most of my leisure time learning codes of every kind.</p>
+  </div>
+  
+  <div class="sub_profile ecouter">
+    <div class="svg">
+      <img src="img/ecouter.svg" alt="">
+    </div>
+    <h3><small>I love to listen to  </small>music</h3>
+    <p>---<br>---</p>
+  </div>
+  
+  <div class="sub_profile experimenter">
+    <div class="svg">
+      <svg id="experimenter" width="160" height="160" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+    <h3><small>I love to </small>experimentr</h3>
+    <p>I learnt coding mostly through experiments, and through online free lessons</p>
+  </div>
+  
+  <div class="sub_profile voyager">
+    <div class="svg">
+      <img class="voyager_ns" src="img/voyagerNS.svg" alt="">
+      <img src="img/voyager2.svg" alt="">
+    </div>
+    <h3><small>>I love to  </small>travel</h3>
+    <p>--- <br>---</p>
+  </div>
+</section>
+
+
+
+
+
+
+<svg id="savoirfaire_to_profile" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="profile_to_savoirfaire" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="big_circle" width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+<img id="circle_dot" src="img/circle_dot.svg" alt="">
+  <div id="big_circle_text">
+    <h2><small>My<br></small>Skills <small><3</small></h2>
+    <p>The follwing are my best skills <br></p>
+  </div>
+<section id="savoir_faire" style="background-color: #ea9a9d;">
+  <h3 class="circle_text front-end">Front-<small>End</small></h3>
+    <h2 class="circle_text html">HTML</h2>
+    <h2 class="circle_text css"><small>CSS</small></h2>
+    <h2 class="circle_text js">jQuery</h2>
+
+    
+  <h3 class="circle_text back-end">Back-<small>End</small></h3>
+    <h2 class="circle_text cms">CMS</h2>
+    <h2 class="circle_text python">Python<br> (flask)</h2>
+    <h2 class="circle_text php">PHP</h2>
+    
+  <h3 class="circle_text os">Other Programming Skills</h3>
+    <h2 class="circle_text mac">Mac</h2>
+    <h2 class="circle_text windows">Windows</h2>
+    <h2 class="circle_text ios">IOS</h2>
+    <h2 class="circle_text android">Android</h2>
+    
+  <h3 class="circle_text logiciels">Softwares</h3>
+    <h2 class="circle_text photoshop">Photoshop</h2>
+    <h2 class="circle_text illustrator">Adobr XD</h2>
+    <h2 class="circle_text after_effect">Git</h2>
+    <h2 class="circle_text cinema_4D">Linux Servers</h2>
+  <svg id="all" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+  <svg id="front" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+  <svg id="back" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+  <svg id="os" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+  <svg id="logiciels" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+</section>
+
+
+
+
+
+<svg id="savoirfaire_to_education" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+<section id="education">
+  <div class="img_principale2">
+    <svg id="education_img" width="160" height="160" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+  <div class="education">
+  <h2><small>Education</small></h2>
+  <p>I completed my Bachelor's of Science in Computer Science on May 2018, later the same year I also completed Full-Stack NanoDegree from Udacity on December 2018.</p>
+  </div>
+  <div class="experience" id="experience">
+    <h2><small>Experience</small></h2>
+  <p>I took 3 months Intership as a Front-End Web Developer Intern from June 2018 - August 2018 at WarshaPLUS, Jeddah, K.S.A . Currently I'm working as a teacher at Hera International School and enhancing my programming skills to land a job in the field of my profession.</p>
+  </div>
+
+  </div>
+  
+  
+ <!--  <p>I took a 3 months Intership as a Front-End Web Developer Intern from June 2018 - August 2018. Currently I'm working as a teacher at Hera International School and enhancing my programming skills to land a job in the field of my profession. </p> -->
+  
+  
+</section>
+
+
+
+
+<section id="realisations">
+  <div class="presentation">
+    <svg id="imac" width="360" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div id="macbook">
+      <img class="macbook" src="img/macbook.svg" alt="">
+      <img class="macbook_bottom" src="img/macbook_bottom.svg" alt="">
+    </div>
+    <div class="site_imac vinpai">
+      <img src="img/sites/vinpai_imac.jpg" alt="Vinpai">
+    </div>
+    <img class="site_macbook vinpai" src="img/sites/vinpai_macbook.png" alt="Vinpai">
+
+    <img class="site_prez v1" src="img/sites/v1.png" alt="v1">
+    <img class="site_prez herbak" src="img/sites/herbak.png" alt="Groupe Her-bak">
+  </div>
+  <div class="site" id="vinpai">
+    <h2>cms-blog</h2>
+    <p>---
+        <br>---
+    </p>
+  </div>
+  <div class="site" id="v1">
+    <h2>item-catalog/v1</h2>
+    <p>----
+        <br>----
+    </p>
+  </div>
+  <div class="site" id="herbak">
+    <h2>brilliant.com</h2>
+    <p>---
+        <br>---
+    </p>
+  </div>
+</section>
+
+<!--[if lt IE 9|(IE 9)]><div id="ie"><p>Votre navigateur n'est pas assez récent pour ce site. <br>Pour profiter de l'expérience, vous devez <a href="http://windows.microsoft.com/fr-fr/internet-explorer/download-ie">mettre à jour</a> votre navigateur ou essayer <a href="https://www.google.com/intl/fr_fr/chrome/browser/">chrome</a></p></div><![endif]-->
+<div id="small"><p>---</p></div>
+<div id="mobile"><p>---!</p></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.2.0/snap.svg-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
