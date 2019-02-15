@@ -211,6 +211,7 @@ var homeCircle2 = t1.circle("60%", "45%", 0);
 var homeCircle3 = t1.circle("70%", "55%", 0);
 var homeCircle4 = t1.circle("53%", "52%", 0);
 var homeCircle5 = t1.circle("43%", "51%", 0);
+$( "<a class='btn btn-4'>Check Portfolio</a>" ).appendTo( "nav" );
 
 
 
@@ -219,7 +220,7 @@ var homeCircle5 = t1.circle("43%", "51%", 0);
   
 
 function homeToProfile() {
-   $("a").remove("btn h1");
+   $("a").remove();
   var width = $(window).width();
   var t2 = Snap("#home_to_profile");
   var homeToProfileCircle1 = t2.circle("50%", "50%", 0).attr({
@@ -275,13 +276,16 @@ function profileToHome() {
     strokeWidth: width
   });
   $("nav").attr("id", "");
-  $("#left, #top, #bottom").attr("class", "nav done")
+  $("#left, #top, #bottom").attr("class", "nav done");
+  
+
   profileToHomeCircle.animate({
     r: width/2
   }, 700, mina.easout, function() {
     $("body").removeClass().addClass("home devant");
     $("#profile").removeClass();
-    $("a").addClass("btn btn-4")
+    // $("a").addClass("btn btn-4");
+    // $("a").addClass("btn btn-4");
     $("html").removeClass();
     PtHSnap.clear();
     var exp = Snap("#experimenter");
@@ -291,6 +295,7 @@ function profileToHome() {
     $(".sub_profile.experimenter .svg").removeClass("fait");
     window.setTimeout(function(){
       $("#home").addClass("done");
+    
       home();
     }, 700);
   });
@@ -302,8 +307,8 @@ function profileToHome() {
   
 function profile() {
   $("body").removeClass("devant");
-  $("a").removeClass();
-   $("a").removeClass("btn btn-4"); 
+  
+   // $("a").removeClass(""); 
   var profile = Snap("#profile_img");
   var tete = profile.circle(60, 60, 0).attr({
     fill: "#F9D87C"
