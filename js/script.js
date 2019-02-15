@@ -77,13 +77,13 @@ function detectionDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 2000);
   }
 
-  if(dir == "left" && action == "savoir_faire devant" && !delay){
+  if(dir == "left" && action == "skills devant" && !delay){
     delay=true;
     savoirFaireToProfile();
     window.setTimeout(function(){delay=false;}, 2500);
   }
 
-  if(dir == "right" && action == "savoir_faire devant" && !delay){
+  if(dir == "right" && action == "skills devant" && !delay){
     delay=true;
     SavoirFaireToEducation();
     window.setTimeout(function(){delay=false;}, 3500);
@@ -288,11 +288,11 @@ function profileToHome() {
     // $("a").addClass("btn btn-4");
     $("html").removeClass();
     PtHSnap.clear();
-    var exp = Snap("#experimenter");
+    var exp = Snap("#experiment");
     exp.clear();
     var profile = Snap("#profile_img");
     profile.clear();
-    $(".sub_profile.experimenter .svg").removeClass("fait");
+    $(".sub_profile.experiment .svg").removeClass("fait");
     window.setTimeout(function(){
       $("#home").addClass("done");
     
@@ -344,7 +344,7 @@ function profile() {
   }, 700, mina.easeinout, function() {
     $("body").removeClass().addClass("profile");
     $("#home").removeClass();
-    $("#savoirfaire_to_profile").attr("class", "");
+    $("#skill_to_profile").attr("class", "");
     var t2 = Snap("#home_to_profile");
     t2.clear();
     var t1 = Snap("#home_animation");
@@ -408,19 +408,19 @@ function detectionProfileDeOuf(dir, action) {
     delay=true;
     $("#profile").addClass("out");
     $("html").addClass("profileimgout");
-    $("body").addClass("ecouter");
+    $("body").addClass("music");
     $("#bottom").attr("class", "nav done enable");
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "haut" && action == "profile ecouter" && !delay){
+  if(dir == "haut" && action == "profile music" && !delay){
     delay=true;
-    $("body").removeClass("ecouter").addClass("experimenter");
+    $("body").removeClass("music").addClass("experiment");
     window.setTimeout(function(){
       expAnim()
     }, 1800);
-    if (!$(".sub_profile.experimenter .svg").hasClass("fait")) {
-      var exp = Snap("#experimenter");
+    if (!$(".sub_profile.experiment .svg").hasClass("fait")) {
+      var exp = Snap("#experiment");
       var fiole = exp.path("M124.837,115.088c0-0.459-0.009-0.914-0.022-1.369c-0.003-0.098-0.006-0.195-0.01-0.293 c-0.017-0.452-0.038-0.904-0.067-1.354c-0.003-0.035-0.006-0.069-0.008-0.104c-0.031-0.444-0.068-0.887-0.112-1.328 c-0.005-0.051-0.009-0.102-0.015-0.152c-0.048-0.477-0.104-0.95-0.167-1.421c-0.001-0.01-0.002-0.02-0.004-0.029 c-2.341-17.411-14.642-31.658-30.972-36.8c-0.04-0.013-0.081-0.025-0.121-0.038c-0.446-0.139-0.896-0.273-1.349-0.398 c-0.017-0.004-0.033-0.009-0.051-0.014c-0.243-0.067-0.486-0.133-0.73-0.196V5.614h2.803c1.547,0,2.803-1.257,2.803-2.807 C96.814,1.256,95.559,0,94.012,0H65.988c-1.548,0-2.802,1.256-2.802,2.807c0,1.55,1.254,2.807,2.802,2.807h2.802v65.977 c-0.248,0.064-0.495,0.131-0.741,0.199c-0.012,0.003-0.023,0.006-0.035,0.01c-0.457,0.126-0.909,0.261-1.36,0.401 c-0.036,0.011-0.071,0.022-0.107,0.034c-16.791,5.283-29.323,20.192-31.152,38.27c-0.003,0.034-0.007,0.069-0.01,0.104 c-0.046,0.463-0.085,0.929-0.117,1.396c-0.001,0.019-0.003,0.036-0.004,0.054c-0.031,0.46-0.053,0.922-0.07,1.385 c-0.003,0.085-0.005,0.17-0.008,0.255c-0.014,0.462-0.024,0.924-0.024,1.39c0,6.544,1.399,12.761,3.911,18.369 c6.266,13.984,19.465,24.177,35.216,26.182C76.159,159.877,78.065,160,80,160c1.935,0,3.84-0.123,5.711-0.361 C107.777,156.829,124.837,137.954,124.837,115.088z M48.3,146.841l0.001-0.002l0.001,0.002h0c0.088,0.088,0.173,0.178,0.262,0.266 L48.3,146.841z M80,157.193c-23.178,0-42.035-18.889-42.035-42.105c0-8.174,2.344-15.902,6.465-22.456h71.141 c4.121,6.554,6.465,14.282,6.465,22.456C122.035,138.305,103.178,157.193,80,157.193z").attr({
         fill: "#fff"
       });
@@ -448,7 +448,7 @@ function detectionProfileDeOuf(dir, action) {
         fill: "#fff",
         mask: fond_fiole_masque3
       });
-      $(".sub_profile.experimenter .svg").addClass("fait");
+      $(".sub_profile.experiment .svg").addClass("fait");
     }
     function expAnim() {
       bulle1.attr({r: 0,cy: 160})
@@ -476,34 +476,34 @@ function detectionProfileDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "haut" && action == "profile experimenter" && !delay){
+  if(dir == "haut" && action == "profile experiment" && !delay){
     delay=true;
-    $("body").removeClass("experimenter").addClass("voyager");
+    $("body").removeClass("experiment").addClass("travel");
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
 
 
-  if(dir == "bas" && action == "profile ecouter" && !delay){
+  if(dir == "bas" && action == "profile music" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done");
     $("html").removeClass("profileimgout");
-    $("body").removeClass("ecouter");
+    $("body").removeClass("music");
     window.setTimeout(function(){
       $("#profile").removeClass("out");
     }, 500);
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "bas" && action == "profile experimenter" && !delay){
+  if(dir == "bas" && action == "profile experiment" && !delay){
     delay=true;
-    $("body").removeClass("experimenter").addClass("ecouter");
+    $("body").removeClass("experiment").addClass("music");
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "bas" && action == "profile voyager" && !delay){
+  if(dir == "bas" && action == "profile travel" && !delay){
     delay=true;
-    $("body").removeClass("voyager").addClass("experimenter");
+    $("body").removeClass("travel").addClass("experiment");
     window.setTimeout(function(){delay=false;}, 1500);
   }
 }
@@ -535,8 +535,8 @@ function detectionProfileDeOuf(dir, action) {
   
 function savoirFaireToProfile () {
   var taille = ($(window).width()+$(window).height())/2;
-  var SFtP = Snap("#savoirfaire_to_profile");
-  $("#savoirfaire_to_profile").attr("class", "here");
+  var SFtP = Snap("#skill_to_profile");
+  $("#skill_to_profile").attr("class", "here");
   var savoirFaireToProfileCircle = SFtP.circle("50%", "50%", 0).attr({
     fill: "#e8e8e0",
   });
@@ -546,14 +546,14 @@ function savoirFaireToProfile () {
     SFtP.clear();
     var c1 = Snap("#big_circle");
     c1.clear();
-    var PtSFSnap = Snap("#profile_to_savoirfaire");
+    var PtSFSnap = Snap("#profile_to_skill");
     PtSFSnap.clear();
     SFtP.clear();
     Snap("#all").clear();
     Snap("#front").clear();
     Snap("#back").clear();
     Snap("#os").clear();
-    Snap("#logiciels").clear();
+    Snap("#software").clear();
   });
   window.setTimeout(function(){
     $("body").removeClass().addClass("profile");
@@ -581,7 +581,7 @@ function savoirFaireToProfile () {
   
 function profileToSavoirFaire() {
   
-  var PtSFSnap = Snap("#profile_to_savoirfaire");
+  var PtSFSnap = Snap("#profile_to_skill");
   var cx= $(window).width()/2,
       cy= $(window).height()/2,
       width= $(window).width(),
@@ -602,20 +602,20 @@ function profileToSavoirFaire() {
   }, 1400, mina.easeinout);
   profileToSavoirfaireCircle.animate( { transform: "r -90, "+cx+", "+cy}, 1 );
   profileToSavoirfaireCircle.animate( { transform: "r -180, "+cx+", "+cy}, 1400, function() {
-    $("body").removeClass().addClass("savoir_faire devant");
+    $("body").removeClass().addClass("skills devant");
     $("#profile").removeClass();
     $("html").removeClass();
     var profile = Snap("#profile_img");
     profile.clear();
-    var exp = Snap("#experimenter");
+    var exp = Snap("#experiment");
     exp.clear();
-    $(".sub_profile.experimenter .svg").removeClass("fait");
+    $(".sub_profile.experiment .svg").removeClass("fait");
   });
   window.setTimeout(function(){
-    $("nav").attr("id", "savoir_faire_nav");
+    $("nav").attr("id", "skills_nav");
     $("#bottom, #top").attr("class", "nav done");
   }, 800);
-  savoir_faire(1200);
+  skills(1200);
 
 } // FIN profileToSavoirFaire()
 
@@ -625,7 +625,7 @@ function profileToSavoirFaire() {
 
 
 
-function savoir_faire(delay) {  
+function skills(delay) {  
   var c1 = Snap("#big_circle");
   var bigCircle = c1.circle(300, 300, 0).attr({
     cx: "50%",
@@ -648,7 +648,7 @@ function savoir_faire(delay) {
   var front = Snap("#front");
   var back = Snap("#back");
   var os = Snap("#os");
-  var logiciels = Snap("#logiciels");
+  var logiciels = Snap("#software");
 
   function skill_circles(name, taille, x, y, number) {
     var all = Snap("#all");
@@ -845,7 +845,7 @@ function savoir_faire(delay) {
     }
 
     Logiciels=true;
-    $(".logiciels").hover(Logiciels_Hover, function(){return false;});
+    $(".software").hover(Logiciels_Hover, function(){return false;});
 
     function Logiciels_Hover() {
       if (Logiciels) {
@@ -870,7 +870,7 @@ function savoir_faire(delay) {
   }, 2100);
 
   
-} // FIN savoir_faire()
+} // FIN skills()
   
   
   
@@ -895,8 +895,8 @@ function savoir_faire(delay) {
   
 function SavoirFaireToEducation() {
   var width = $(window).width();
-  $("#savoirfaire_to_education").attr("class", "here");
-  var SFtE = Snap("#savoirfaire_to_education");
+  $("#skill_to_education").attr("class", "here");
+  var SFtE = Snap("#skill_to_education");
   var educationRect1 = SFtE.rect(0, 0, 0, "100%").attr({
     fill: "#b6e7e6"
   });
@@ -923,13 +923,13 @@ function SavoirFaireToEducation() {
     }, 800, mina.easeinout, function() {
       var c1 = Snap("#big_circle");
       c1.clear();
-      var PtSFSnap = Snap("#profile_to_savoirfaire");
+      var PtSFSnap = Snap("#profile_to_skill");
       PtSFSnap.clear();
       Snap("#all").clear();
       Snap("#front").clear();
       Snap("#back").clear();
       Snap("#os").clear();
-      Snap("#logiciels").clear();
+      Snap("#software").clear();
       $("body").removeClass().addClass("education");
       SFtE.clear();
       education()
@@ -1036,8 +1036,8 @@ function education() {
   
 function EducationToSavoirFaire() {
   var width = $(window).width();
-  var SFtE = Snap("#savoirfaire_to_education");
-  $("#savoirfaire_to_education").attr("class", "here");
+  var SFtE = Snap("#skill_to_education");
+  $("#skill_to_education").attr("class", "here");
   var educationRect1 = SFtE.rect(width, 0, "100%", "100%").attr({
     fill: "#f1b8bb"
   });
@@ -1062,17 +1062,17 @@ function EducationToSavoirFaire() {
     educationRect3.animate({
       x: 0
     }, 800, mina.easeinout, function() {
-      $("body").removeClass().addClass("savoir_faire devant");
+      $("body").removeClass().addClass("skills devant");
       SFtE.clear();
-      savoir_faire(300);
+      skills(300);
       $("#education").removeClass();
       var education = Snap("#education_img");
       education.clear();
-      $("#savoirfaire_to_education").attr("class", "");
+      $("#skill_to_education").attr("class", "");
     })
   }, 700);
   window.setTimeout(function(){
-    $("nav").attr("id", "savoir_faire_nav");
+    $("nav").attr("id", "skills_nav");
   }, 1200);
 }
   
@@ -1117,7 +1117,7 @@ function EducationToSavoirFaire() {
 
 
 function EducationToRealisations() {
-  $("#savoirfaire_to_education").attr("class", "");
+  $("#skill_to_education").attr("class", "");
   var width = $(window).width();
   var EtR = Snap("200%", "600%");
   EtR.attr({id: "education_to_realisations"});
