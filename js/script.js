@@ -211,7 +211,7 @@ var homeCircle2 = t1.circle("60%", "45%", 0);
 var homeCircle3 = t1.circle("70%", "55%", 0);
 var homeCircle4 = t1.circle("53%", "52%", 0);
 var homeCircle5 = t1.circle("43%", "51%", 0);
-$( "<a class='btn btn-4'>Check Portfolio</a>" ).appendTo( "nav" );
+$( "<button class='btn btn-4'>Check Portfolio</button>" ).appendTo( "nav" );
 
 
 
@@ -220,7 +220,7 @@ $( "<a class='btn btn-4'>Check Portfolio</a>" ).appendTo( "nav" );
   
 
 function homeToProfile() {
-   $("a").remove();
+   $("button").remove();
   var width = $(window).width();
   var t2 = Snap("#home_to_profile");
   var homeToProfileCircle1 = t2.circle("50%", "50%", 0).attr({
@@ -372,27 +372,27 @@ function profile() {
 function profileKey() {
 
 $("#top").click(function(e) {
-  var dir = "haut";
+  var dir = "top";
   var action = $("body").attr("class");
   detectionProfileDeOuf(dir, action);
   e.preventDefault();
 });
 $("#bottom").click(function(e) {
-  var dir = "bas";
+  var dir = "bottom";
   var action = $("body").attr("class");
   detectionProfileDeOuf(dir, action);
   e.preventDefault();
 });
 
 $(document).keydown(function (evenement){
-  if(evenement.which == 38){ // Fleche haut
-    var dir = "haut";
+  if(evenement.which == 38){ // Fleche top
+    var dir = "top";
     var action = $("body").attr("class");
     detectionProfileDeOuf(dir, action);
   }
   
-  if(evenement.which == 40){ // Fleche bas
-    var dir = "bas";
+  if(evenement.which == 40){ // Fleche bottom
+    var dir = "bottom";
     var action = $("body").attr("class");
     detectionProfileDeOuf(dir, action);
   }
@@ -404,7 +404,7 @@ $(document).keydown(function (evenement){
 
 function detectionProfileDeOuf(dir, action) {
 
-  if(dir == "haut" && action == "profile" && !delay){
+  if(dir == "top" && action == "profile" && !delay){
     delay=true;
     $("#profile").addClass("out");
     $("html").addClass("profileimgout");
@@ -413,7 +413,7 @@ function detectionProfileDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "haut" && action == "profile music" && !delay){
+  if(dir == "top" && action == "profile music" && !delay){
     delay=true;
     $("body").removeClass("music").addClass("experiment");
     window.setTimeout(function(){
@@ -476,7 +476,7 @@ function detectionProfileDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "haut" && action == "profile experiment" && !delay){
+  if(dir == "top" && action == "profile experiment" && !delay){
     delay=true;
     $("body").removeClass("experiment").addClass("travel");
     window.setTimeout(function(){delay=false;}, 1500);
@@ -484,7 +484,7 @@ function detectionProfileDeOuf(dir, action) {
 
 
 
-  if(dir == "bas" && action == "profile music" && !delay){
+  if(dir == "bottom" && action == "profile music" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done");
     $("html").removeClass("profileimgout");
@@ -495,13 +495,13 @@ function detectionProfileDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "bas" && action == "profile experiment" && !delay){
+  if(dir == "bottom" && action == "profile experiment" && !delay){
     delay=true;
     $("body").removeClass("experiment").addClass("music");
     window.setTimeout(function(){delay=false;}, 1500);
   }
 
-  if(dir == "bas" && action == "profile travel" && !delay){
+  if(dir == "bottom" && action == "profile travel" && !delay){
     delay=true;
     $("body").removeClass("travel").addClass("experiment");
     window.setTimeout(function(){delay=false;}, 1500);
@@ -530,7 +530,7 @@ function detectionProfileDeOuf(dir, action) {
   
     
 // --------------------------------------
-//            Savoir Faire
+//            Skill
 // --------------------------------------
   
 function savoirFaireToProfile () {
@@ -945,28 +945,28 @@ function SavoirFaireToEducation() {
   
 function education() {
   var education = Snap("#education_img");
-  var CbasMask = education.circle(80, 0, 50).attr({
+  var CbottomMask = education.circle(80, 0, 50).attr({
     fill: "#fff",
   });
-  var Cbas = education.path("M114.311,101.769V75.173H45.725c0,0,0,23.007,0,26.595C44.177,114.858,109.691,121.193,114.311,101.769z").attr({
+  var Cbottom = education.path("M114.311,101.769V75.173H45.725c0,0,0,23.007,0,26.595C44.177,114.858,109.691,121.193,114.311,101.769z").attr({
     fill: "#252C3C",
-    mask: CbasMask
+    mask: CbottomMask
   });
 
-  var Cbas2Mask = education.circle(80, 0, 50).attr({
+  var Cbottom2Mask = education.circle(80, 0, 50).attr({
     fill: "#fff",
   });
-  var Cbas2 = education.path("M114.311,96.601V70.005H45.725c0,0,0,23.007,0,26.595C44.177,109.691,109.691,116.025,114.311,96.601z").attr({
+  var Cbottom2 = education.path("M114.311,96.601V70.005H45.725c0,0,0,23.007,0,26.595C44.177,109.691,109.691,116.025,114.311,96.601z").attr({
     fill: "#2F4351",
-    mask: Cbas2Mask
+    mask: Cbottom2Mask
   });
 
-  var ChautMask = education.circle(0, 0, 0).attr({
+  var CtopMask = education.circle(0, 0, 0).attr({
     fill: "#fff",
   });
-  var Chaut = education.polygon("0,66.054 80.019,94.632 160.036,66.054 80.019,37.476").attr({
+  var Ctop = education.polygon("0,66.054 80.019,94.632 160.036,66.054 80.019,37.476").attr({
     fill: "#242c3c",
-    mask: ChautMask
+    mask: CtopMask
   });
 
   var CribbonMask = education.circle(40, 40, 0).attr({
@@ -984,22 +984,22 @@ function education() {
     mask: Cribbon2Mask
   });
 
-  var ChautBoule = education.circle(80, 66, 0).attr({
+  var CtopBoule = education.circle(80, 66, 0).attr({
     fill: "#2F4351",
   });
 
-  Cbas2Mask.animate({
+  Cbottom2Mask.animate({
     r: 150
   }, 700);
-  CbasMask.animate({
+  CbottomMask.animate({
     r: 150
   }, 700);
   
   window.setTimeout(function(){
-    ChautMask.animate({
+    CtopMask.animate({
       r: 200
     }, 1100, function() {
-      ChautBoule.animate({
+      CtopBoule.animate({
         r: 3,
       }, 100);
       CribbonMask.animate({
@@ -1212,12 +1212,12 @@ function RealisationsToEducation() {
 
 function realisations () {
   var imac = Snap("#imac");
-  var imacHautMask = imac.rect(180, 0, 0, 300).attr({
+  var imactopMask = imac.rect(180, 0, 0, 300).attr({
     fill: "#fff"
   });
-  var imacHaut = imac.path("M347.797,0H12.198C5.563,0,0,4.879,0,11.514V216h360V11.514C360,4.879,354.434,0,347.797,0z").attr({
+  var imactop = imac.path("M347.797,0H12.198C5.563,0,0,4.879,0,11.514V216h360V11.514C360,4.879,354.434,0,347.797,0z").attr({
     fill: "#454D59",
-    mask: imacHautMask
+    mask: imactopMask
   });
   var imacMilieuMask = imac.rect(180, 0, 0, 300).attr({
     fill: "#fff"
@@ -1228,28 +1228,28 @@ function realisations () {
   });
 
 
-  var imacBasMask = imac.rect(0, 255, 360, 0).attr({
+  var imacbottomMask = imac.rect(0, 255, 360, 0).attr({
     fill: "#fff"
   });
-  var imacBas = imac.polygon("133.481,266 226.195,266 226.302,266 225.596,256 134.4,256").attr({
+  var imacbottom = imac.polygon("133.481,266 226.195,266 226.302,266 225.596,256 134.4,256").attr({
     fill: "#CACCCE",
-    mask: imacBasMask
+    mask: imacbottomMask
   });
-  var imacBas2Mask = imac.rect(0, 255, 360, 0).attr({
+  var imacbottom2Mask = imac.rect(0, 255, 360, 0).attr({
     fill: "#fff"
   });
-  var imacBas2 = imac.path("M133.375,266l-1.483,21.699c0,0,0.213,4.892-5.721,5.527c-11.656,3.179-11.656,2.773-11.656,2.773h130.754 l-11.231-2.626c0,0-5.722,0.3-5.934-5.845c-1.908-21.828-1.908-21.529-1.908-21.529h-92.714H133.375z").attr({
+  var imacbottom2 = imac.path("M133.375,266l-1.483,21.699c0,0,0.213,4.892-5.721,5.527c-11.656,3.179-11.656,2.773-11.656,2.773h130.754 l-11.231-2.626c0,0-5.722,0.3-5.934-5.845c-1.908-21.828-1.908-21.529-1.908-21.529h-92.714H133.375z").attr({
     fill: "#E1E2E4",
-    mask: imacBas2Mask
+    mask: imacbottom2Mask
   });
-  var imacBas3 = imac.rect(115, 296, 130, 0).attr({
+  var imacbottom3 = imac.rect(115, 296, 130, 0).attr({
     fill: "#ECEDEE"
   });
 
   window.setTimeout(function(){
     $(".site_imac.vinpai").addClass("done");
   }, 10);
-  imacHautMask.animate({
+  imactopMask.animate({
     width: 360,
     x: 0
   }, 1100);
@@ -1257,14 +1257,14 @@ function realisations () {
     width: 360,
     x: 0
   }, 1100, function () {
-    imacBasMask.animate({
+    imacbottomMask.animate({
       height: 100
     }, 1100, mina.easeinout);
-    imacBas2Mask.animate({
+    imacbottom2Mask.animate({
       height: 100
     }, 1100, mina.easeinout);
     window.setTimeout(function(){
-      imacBas3.animate({
+      imacbottom3.animate({
         height: 4
       }, 100, mina.easeinout);
     }, 500);
@@ -1286,27 +1286,27 @@ function realisations () {
 function realisationsKey() {
 
   $("#top").click(function(e) {
-    var dir = "haut";
+    var dir = "top";
     var action = $("body").attr("class");
     detectionRealisationDeOuf(dir, action);
     e.preventDefault();
   });
   $("#bottom").click(function(e) {
-    var dir = "bas";
+    var dir = "bottom";
     var action = $("body").attr("class");
     detectionRealisationDeOuf(dir, action);
     e.preventDefault();
   });
 
   $(document).keydown(function (evenement){
-    if(evenement.which == 38){ // Fleche haut
-      var dir = "haut";
+    if(evenement.which == 38){ // Fleche top
+      var dir = "top";
       var action = $("body").attr("class");
       detectionRealisationDeOuf(dir, action);
     }
     
-    if(evenement.which == 40){ // Fleche bas
-      var dir = "bas";
+    if(evenement.which == 40){ // Fleche bottom
+      var dir = "bottom";
       var action = $("body").attr("class");
       detectionRealisationDeOuf(dir, action);
     }
@@ -1317,33 +1317,33 @@ function realisationsKey() {
 
 function detectionRealisationDeOuf(dir, action) {
 
-  if(dir == "haut" && action == "realisations vinpaidone vinpai" && !delay){
+  if(dir == "top" && action == "realisations vinpaidone vinpai" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done enable");
-    $("body").removeClass("vinpai").addClass("v1");
+    $("body").removeClass("vinpai").addClass("brilliant");
     window.setTimeout(function(){delay=false;}, 500);
   }
 
-  if(dir == "haut" && action == "realisations vinpaidone v1" && !delay){
+  if(dir == "top" && action == "realisations vinpaidone brilliant" && !delay){
     delay=true;
     $("#top").attr("class", "nav done");
-    $("body").removeClass("v1").addClass("herbak");
+    $("body").removeClass("brilliant").addClass("blog");
     window.setTimeout(function(){delay=false;}, 500);
   }
 
 
 
-  if(dir == "bas" && action == "realisations vinpaidone v1" && !delay){
+  if(dir == "bottom" && action == "realisations vinpaidone brilliant" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done");
-    $("body").removeClass("v1").addClass("vinpai");
+    $("body").removeClass("brilliant").addClass("vinpai");
     window.setTimeout(function(){delay=false;}, 500);
   }
 
-  if(dir == "bas" && action == "realisations vinpaidone herbak" && !delay){
+  if(dir == "bottom" && action == "realisations vinpaidone blog" && !delay){
     delay=true;
     $("#top").attr("class", "nav done enable");
-    $("body").removeClass("herbak").addClass("v1");
+    $("body").removeClass("blog").addClass("brilliant");
     window.setTimeout(function(){delay=false;}, 500);
   }
 }

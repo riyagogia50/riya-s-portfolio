@@ -869,7 +869,9 @@ body h1 small {
 	z-index: 100;
 	-webkit-transform: translateY(0);
 	-moz-transform: translateY(0);
-___	-o-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
 	-webkit-transition-duration: 1.2s;
 	-moz-transition-duration: 1.2s;
 	-o-transition-duration: 1.2s;
@@ -1303,9 +1305,9 @@ body.travel .travel p {
 	transition-timing-function: cubic-bezier(0.000, 0.000, 0.500, 1.000)
 }
 
-body.vinpai #vinpai h2,
-body.v1 #v1 h2,
-body.herbak #herbak h2 {
+body.vinpai #item-cat h2,
+body.brilliant #brilliant h2,
+body.blog #blog h2 {
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
@@ -1326,9 +1328,9 @@ body.herbak #herbak h2 {
 	transition-timing-function: cubic-bezier(0.000, 0.000, 0.500, 1.000)
 }
 
-body.vinpai #vinpai p,
-body.v1 #v1 p,
-body.herbak #herbak p {
+body.vinpai #item-cat p,
+body.brilliant #brilliant p,
+body.blog #blog p {
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
@@ -1357,8 +1359,8 @@ body.herbak #herbak p {
 	transition-duration: 0.7s
 }
 
-.v1 .presentation .site_prez.v1,
-.herbak .presentation .site_prez.herbak {
+.brilliant .presentation .site_prez.brilliant,
+.blog .presentation .site_prez.blog {
 	opacity: 1
 }
 
@@ -1408,16 +1410,14 @@ p {
 
 #small,
 #mobile {
-	display: none
+	display: none;
 }
 
 .mobile #mobile {
-	display: block
+	display: none;
 }
 
 
-
-}
 @media (max-width: 1000px),
 (max-height: 600px) {
 	#small {
@@ -1425,6 +1425,7 @@ p {
 	}
 }
 
+		
 h2,
 h3,
 h4 {
@@ -1690,51 +1691,13 @@ canvas {
 
 #particles-js {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	/*width: 100vw;
+	height: 100vh;*/
 	cursor: pointer;
-	z-index: -1;
+	/*z-index: -1;*/
 }
 
 
-
-/* ---- stats.js ---- */
-
-/*.count-particles {
-	background: #000022;
-	position: absolute;
-	top: 48px;
-	left: 0;
-	width: 80px;
-	color: #13E8E9;
-	font-size: .8em;
-	text-align: left;
-	text-indent: 4px;
-	line-height: 14px;
-	padding-bottom: 2px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
-}
-
-.js-count-particles {
-	font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-	-webkit-user-select: none;
-	margin-top: 5px;
-	margin-left: 5px;
-}
-
-#stats {
-	border-radius: 3px 3px 0 0;
-	overflow: hidden;
-}
-
-.count-particles {
-	border-radius: 0 0 3px 3px;
-}*/
 
 .exp>h2 {
 	margin-top: 60%;
@@ -1804,3 +1767,150 @@ canvas {
 /* some styles */
 body { font-family: 'Hammersmith One', sans-serif; color: #666; text-align:center; }
 h1 { font-weight: normal; }
+
+/* Social Icons*/
+
+/* Color Variables */
+/* Social Icon Mixin */
+/* Social Icons */
+.social-icons {
+    display: block;
+    position: absolute;
+    margin-top: -22em;
+    margin-left: -3em;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: initial;
+  width: 60px;
+  height: 60px;
+  margin: 0 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.15s ease;
+
+}
+.social-icon:hover {
+  color: #fff;
+}
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+  background: #006599;
+  background: linear-gradient(tint(#006599, 5%), shade(#006599, 5%));
+  border-bottom: 1px solid shade(#006599, 20%);
+  color: tint(#006599, 50%);
+}
+.social-icon--linkedin:hover {
+  color: tint(#006599, 80%);
+  text-shadow: 0px 1px 0px shade(#006599, 20%);
+}
+.social-icon--linkedin .tooltip {
+  background: #006599;
+  background: linear-gradient(tint(#006599, 15%), #006599);
+  color: tint(#006599, 80%);
+}
+.social-icon--linkedin .tooltip:after {
+  border-top-color: #006599;
+}
+.social-icon--twitter {
+  background: #2b97f1;
+  background: linear-gradient(tint(#2b97f1, 5%), shade(#2b97f1, 5%));
+  border-bottom: 1px solid shade(#2b97f1, 20%);
+  color: tint(#2b97f1, 50%);
+}
+.social-icon--twitter:hover {
+  color: tint(#2b97f1, 80%);
+  text-shadow: 0px 1px 0px shade(#2b97f1, 20%);
+}
+.social-icon--twitter .tooltip {
+  background: #2b97f1;
+  background: linear-gradient(tint(#2b97f1, 15%), #2b97f1);
+  color: tint(#2b97f1, 80%);
+}
+.social-icon--twitter .tooltip:after {
+  border-top-color: #2b97f1;
+}
+.social-icon--facebook {
+  background: #3b5a9b;
+  background: linear-gradient(tint(#3b5a9b, 5%), shade(#3b5a9b, 5%));
+  border-bottom: 1px solid shade(#3b5a9b, 20%);
+  color: tint(#3b5a9b, 50%);
+}
+.social-icon--facebook:hover {
+  color: tint(#3b5a9b, 80%);
+  text-shadow: 0px 1px 0px shade(#3b5a9b, 20%);
+}
+.social-icon--facebook .tooltip {
+  background: #3b5a9b;
+  background: linear-gradient(tint(#3b5a9b, 15%), #3b5a9b);
+  color: tint(#3b5a9b, 80%);
+}
+.social-icon--facebook .tooltip:after {
+  border-top-color: #3b5a9b;
+}
+.social-icon--github {
+  background: #4284c0;
+  background: linear-gradient(tint(#4284c0, 5%), shade(#4284c0, 5%));
+  border-bottom: 1px solid shade(#4284c0, 20%);
+  color: tint(#4284c0, 50%);
+}
+.social-icon--github:hover {
+  color: tint(#4284c0, 80%);
+  text-shadow: 0px 1px 0px shade(#4284c0, 20%);
+}
+.social-icon--github .tooltip {
+  background: #4284c0;
+  background: linear-gradient(tint(#4284c0, 15%), #4284c0);
+  color: tint(#4284c0, 80%);
+}
+.social-icon--github .tooltip:after {
+  border-top-color: #4284c0;
+}
+.social-icon i {
+  position: relative;
+  top: 1px;
+
+}
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
