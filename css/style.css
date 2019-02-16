@@ -1827,6 +1827,13 @@ h1 { font-weight: normal; }
 .social-icon:hover {
   color: #fff;
 }
+.social-icon i:hover {
+  color: #fff;
+  -webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s
+}
 .social-icon:hover .tooltip {
   visibility: visible;
   opacity: 1;
