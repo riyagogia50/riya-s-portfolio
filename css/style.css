@@ -345,6 +345,32 @@ th {
 	}
 }
 
+@keyframes social {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.social-icons {  
+  animation: 1s ease-out 0s 1 social;
+  -webkit-transition-delay: 5s;
+	-moz-transition-delay: 5s;
+	-o-transition-delay: 5s;
+	transition-delay: 5s;
+	-webkit-transition-duration: 2.5s;
+	-moz-transition-duration: 2.5s;
+	-o-transition-duration: 2.5s;
+	transition-duration: 2.5s
+  
+  
+
+}
+
+
 #skills {
 	color: #ea9a9d
 }
@@ -1778,6 +1804,7 @@ h1 { font-weight: normal; }
     position: absolute;
     margin-top: -22em;
     margin-left: -3em;
+
 }
 .social-icon {
   display: flex;
@@ -1786,7 +1813,7 @@ h1 { font-weight: normal; }
   position: initial;
   width: 60px;
   height: 60px;
-  margin: 0 2.5rem;
+  margin: 0 2rem;
   border-radius: 50%;
   cursor: pointer;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -1882,7 +1909,13 @@ h1 { font-weight: normal; }
 .social-icon i {
   position: relative;
   top: 1px;
+  color: #3e3e3e;
+};
 
+}
+.social-icon i:hover {
+	color: #eee;
+	transition-duration: 0.7s;
 }
 /* Tooltips */
 .tooltip {
@@ -1914,3 +1947,4 @@ h1 { font-weight: normal; }
   border-color: transparent;
   transform: translate(-50%, 100%);
 }
+
