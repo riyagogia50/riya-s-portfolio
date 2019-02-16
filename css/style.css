@@ -357,10 +357,10 @@ th {
 
 .social-icons {  
   animation: 1s ease-out 0s 1 social;
-  -webkit-transition-delay: 5s;
-	-moz-transition-delay: 5s;
-	-o-transition-delay: 5s;
-	transition-delay: 5s;
+  -webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
 	-webkit-transition-duration: 2.5s;
 	-moz-transition-duration: 2.5s;
 	-o-transition-duration: 2.5s;
@@ -1821,6 +1821,7 @@ h1 { font-weight: normal; }
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.15s ease;
+  color: inherit;
 
 }
 .social-icon:hover {
