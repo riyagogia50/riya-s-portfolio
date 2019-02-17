@@ -826,6 +826,7 @@ top: 31%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: contents;
 	-webkit-transform: rotate(45deg) translateX(1500px) translateY(-500px);
 	-moz-transform: rotate(45deg) translateX(1500px) translateY(-500px);
 	-ms-transform: rotate(45deg) translateX(1500px) translateY(-500px);
@@ -1413,7 +1414,8 @@ p {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.07em;
-	z-index: 9999999999
+	z-index: 9999999999;
+	
 }
 
 #ie p,
@@ -1447,7 +1449,14 @@ p {
 @media (max-width: 1000px),
 (max-height: 600px) {
 	#small {
-		display: block
+		display: block;
+	}
+}
+
+@media (max-width: 1000px),
+ {
+	#particles-js {
+		display: none;
 	}
 }
 
@@ -1710,6 +1719,7 @@ h1 small {
 canvas {
 	display: block;
 	vertical-align: bottom;
+
 }
 
 
