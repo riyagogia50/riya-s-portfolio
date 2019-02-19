@@ -703,7 +703,7 @@ font-size: 15px;
 
 #education {
 	background: #a2cecd;
-	color: #2F4351
+	color: #2F4351;
 }
 
 .education #education {
@@ -731,6 +731,7 @@ font-size: 15px;
 	    margin-top: 45px;
 	left: 50%;
 	    margin-left: -72px;
+	    color: #2F4351;
 }
 #experience h2 {
 	margin-top: 242px;
@@ -745,7 +746,8 @@ font-size: 15px;
 	left: 50%;
 	margin-left: -200px;
 	width: 400px;
-	text-align: center
+	text-align: center;
+	color: #2F4351;
 }
 #education p {
 top: 250px;	
@@ -756,7 +758,7 @@ top: 250px;
 
 #realisations {
 	background: #e8e8e0;
-	color: #7a8088
+	color: #7a8088;
 }
 
 .realisations #realisations {
