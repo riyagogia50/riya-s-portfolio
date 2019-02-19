@@ -288,7 +288,10 @@ th {
 	margin-left: -70px;
 	top: 50%;
 	margin-top: -3px;
-	text-transform: uppercase
+	text-transform: uppercase;
+	text-align: left;
+    font-size: 15px;
+
 }
 
 .sub_profile .svg {
@@ -305,8 +308,8 @@ th {
 }
 
 .music .sub_profile.music .svg img {
-	animation: rotate 3s linear infinite;
-	-webkit-animation: rotate 3s linear infinite
+	/*animation: rotate 3s linear infinite;
+	-webkit-animation: rotate 3s linear infinite*/
 }
 
 .travel .svg .travel_ns {
@@ -496,26 +499,26 @@ th {
 }
 
 .back-end {
-	font-size: 14px;
-	top: 25%;
-	left: 72%;
-	margin-left: -57px;
-	margin-top: -57px;
-	padding-top: 42px;
-	height: 64px;
-	width: 106px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%
+	    font-size: 21px;
+    top: 25%;
+    left: 72%;
+    margin-left: -57px;
+    margin-top: -57px;
+    padding-top: 39px;
+    height: 64px;
+    width: 106px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .os {
 	top: 75%;
 	left: 30%;
 	margin-left: -64px;
-	margin-top: -64px;
+	margin-top: -74px;
 	padding-top: 45px;
 	height: 75px;
 	width: 120px;
@@ -523,7 +526,8 @@ th {
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
-	border-radius: 50%
+	border-radius: 50%;
+	    font-size: 14px;
 }
 
 .software {
@@ -550,6 +554,13 @@ th {
 	margin-left: -89px;
 	width: 170px
 }
+.bootstrap {
+	font-size: 14px;
+    top: 15%;
+    left: 34%;
+    margin-top: -67px;
+    margin-left: -259px;
+}
 
 .html {
 	font-size: 21px;
@@ -566,14 +577,14 @@ th {
 	top: 42%;
 	left: 16%;
 	margin-left: -64px;
-	margin-top: -15px;
+	margin-top: -12px;
 	width: 120px
 }
 
 .cms {
 	font-size: 16px;
 	top: 13%;
-	left: 79%;
+	left: 82%;
 	margin-left: -64px;
 	margin-top: -15px;
 	width: 120px
@@ -609,12 +620,12 @@ th {
 }
 
 .windows {
-	font-size: 12px;
-	top: 86%;
-	left: 13%;
-	margin-left: -63px;
-	margin-top: -11px;
-	width: 120px
+	font-size: 20px;
+    top: 86%;
+    left: 13%;
+    margin-left: -64px;
+    margin-top: -14px;
+    width: 120px;
 }
 
 .ios {
@@ -627,21 +638,22 @@ th {
 }
 
 .android {
-	font-size: 10px;
-	top: 89%;
-	left: 38%;
-	margin-left: -63px;
-	margin-top: -10px;
-	width: 120px
+	font-size: 17px;
+    top: 89%;
+    left: 38%;
+    margin-left: -63px;
+    margin-top: -13px;
+    width: 120px;
+
 }
 
 .photoshop {
-	font-size: 15px;
-	top: 50%;
-	left: 72%;
-	margin-left: -64px;
-	margin-top: -13px;
-	width: 120px
+	font-size: 13px;
+    top: 50%;
+    left: 72%;
+    margin-left: -64px;
+    margin-top: -12px;
+    width: 120px;
 }
 
 .illustrator {
@@ -658,18 +670,35 @@ th {
 	top: 86%;
 	left: 83%;
 	margin-left: -64px;
-	margin-top: -17px;
+	margin-top: -11px;
 	width: 120px;
 	line-height: 17px
 }
 
 .cinema_4D {
-	font-size: 12px;
-	top: 79%;
-	left: 62%;
-	margin-left: -64px;
-	margin-top: -10px;
-	width: 120px
+	font-size: 15px;
+    top: 79%;
+    left: 62%;
+    margin-left: -64px;
+    margin-top: -20px;
+    width: 120px;
+}
+.PSQL {
+	    font-size: 23px;
+    top: 79%;
+    left: 62%;
+    margin-left: 90px;
+    margin-top: 82px;
+    width: 120px;
+}
+.Vagrant {
+font-size: 15px;
+    top: 79%;
+    left: 62%;
+    margin-left: 257px;
+    margin-top: -230px;
+    width: 120px;
+}
 }
 
 #education {
@@ -704,7 +733,7 @@ th {
 	    margin-left: -72px;
 }
 #experience h2 {
-	margin-top: 16%;
+	margin-top: 242px;
 }
 
 
@@ -719,7 +748,7 @@ th {
 	text-align: center
 }
 #education p {
-top: 31%;	
+top: 250px;	
 }
 #experience p {
 	margin-top: 16%;

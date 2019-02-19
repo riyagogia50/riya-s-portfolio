@@ -758,7 +758,7 @@ function skills(delay) {
     }, 300);
 
     window.setTimeout(function(){
-      skill_circles("BackEnd", 53, 72, 25);
+      skill_circles("BackEnd", 85, 72, 25);
     }, 900);
 
     window.setTimeout(function(){
@@ -783,7 +783,7 @@ function skills(delay) {
     function FrontEnd_Hover() {
       if (front_end) {
         window.setTimeout(function(){
-          skill_circles("css", 70, 34, 15, 2);
+          skill_circles("css", 60, 34, 15, 2);
         });
 
         window.setTimeout(function(){
@@ -793,6 +793,9 @@ function skills(delay) {
         window.setTimeout(function(){
           skill_circles("js", 45, 16, 42, 2);
         }, 200);
+        window.setTimeout(function(){
+          skill_circles("bootstrap", 60, 20, 8, 2);
+        }, 100);
       }
       front_end=false;
     }
@@ -806,11 +809,11 @@ function skills(delay) {
     function BackEnd_Hover() {
       if (back_end) {
         window.setTimeout(function(){
-          skill_circles("php", 37, 88, 32, 3);
+          skill_circles("php", 50, 88, 32, 3);
         });
 
         window.setTimeout(function(){
-          skill_circles("cms", 42, 79, 13, 3);
+          skill_circles("cms", 50, 82, 13, 3);
         }, 100);
 
         window.setTimeout(function(){
@@ -826,7 +829,7 @@ function skills(delay) {
     function Os_Hover() {
       if (Os) {
         window.setTimeout(function(){
-          skill_circles("Mac", 65, 32, 54, 4);
+          skill_circles("Mac", 45, 32, 54, 4);
         });
 
         window.setTimeout(function(){
@@ -834,11 +837,11 @@ function skills(delay) {
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("IOS", 55, 19, 68, 4);
+          skill_circles("IOS", 45, 19, 68, 4);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("Android", 35, 38, 89, 4);
+          skill_circles("Android", 45, 38, 89, 4);
         }, 100);
       }
       Os=false;
@@ -850,20 +853,26 @@ function skills(delay) {
     function Logiciels_Hover() {
       if (Logiciels) {
         window.setTimeout(function(){
-          skill_circles("Photoshop", 65, 72, 50, 5);
+          skill_circles("Photoshop", 50, 72, 50, 5);
         });
 
         window.setTimeout(function(){
-          skill_circles("Illustrator", 60, 89, 66, 5);
+          skill_circles("Illustrator", 50, 89, 66, 5);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("After_effect", 65, 83, 86, 5);
+          skill_circles("After_effect", 50, 83, 86, 5);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("C4D", 48, 62, 79, 5);
+          skill_circles("C4D", 50, 62, 79, 5);
         }, 100);
+        window.setTimeout(function(){
+          skill_circles("PSQL", 50, 72, 92, 5);
+        }, 100);
+        window.setTimeout(function(){
+          skill_circles("Vagrant", 50, 83, 50, 5);
+        });
       }
       Logiciels=false;
     }
