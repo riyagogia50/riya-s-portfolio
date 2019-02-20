@@ -648,7 +648,7 @@ function skills(delay) {
   var front = Snap("#front");
   var back = Snap("#back");
   var os = Snap("#os");
-  var logiciels = Snap("#software");
+  var softwares = Snap("#software");
 
   function skill_circles(name, taille, x, y, number) {
     var all = Snap("#all");
@@ -683,7 +683,7 @@ function skills(delay) {
       var y1 = "75%"; 
       var x1 = "30%";
     } else if (number == 5) {
-      var all = logiciels;
+      var all = softwares;
       var height0 = (70*height)/100;
       var width0 = (75*width)/100;
       var y1 = "70%"; 
@@ -766,7 +766,7 @@ function skills(delay) {
     }, 700);
 
     window.setTimeout(function(){
-      skill_circles("Logiciels", 70, 75, 70);
+      skill_circles("software", 70, 75, 70);
     }, 400);
 
   }, delay);
@@ -867,12 +867,14 @@ function skills(delay) {
         window.setTimeout(function(){
           skill_circles("C4D", 50, 62, 79, 5);
         }, 100);
+
         window.setTimeout(function(){
           skill_circles("PSQL", 50, 72, 92, 5);
         }, 100);
+        
         window.setTimeout(function(){
           skill_circles("Vagrant", 50, 83, 50, 5);
-        });
+        }, 100);
       }
       Logiciels=false;
     }
