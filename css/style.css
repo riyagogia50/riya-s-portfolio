@@ -716,22 +716,62 @@ font-size: 15px;
 	display: block;
 }
 
-
+.education .svg {
+	position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -80px;
+    width: 160px;
+}
 .img_primary2 {
+	position: absolute;
+    top: 25%;
+    margin-top: -166px;
+    left: 50%;
+    margin-left: -735px;
+    width: 160px;
+    z-index: 999999;
+}
+#timeline {
 	position: absolute;
 	top: 25%;
 	margin-top: -135px;
 	left: 50%;
 	margin-left: -80px;
 	width: 160px;
-	z-index: 999999
+	z-index: 999999;
 }
-
+#timeline1 {
+	    height: 0px;
+    position: absolute;
+    top: 10%;
+	 margin-top: 45px;
+	left: 50%;
+	 margin-left: -496px;
+	color: #2F4351;
+}
+#timeline2 {
+	    position: absolute;
+    top: 10%;
+    margin-top: 242px;
+    left: 50%;
+    margin-left: -44px;
+    color: #2F4351;
+}
+#timeline3 {
+        position: absolute;
+    top: 10%;
+    margin-top: 525px;
+    left: 50%;
+    margin-left: -44px;
+    color: #2F4351;
+}
 #education h2,
 #experience h2 {
 	position: absolute;
 	top: 25%;
-	    margin-top: 45px;
+	    margin-top: 480px;
 	left: 50%;
 	    margin-left: -72px;
 	    color: #2F4351;
@@ -1770,6 +1810,9 @@ canvas {
 
 .exp>h2 {
 	margin-top: 60%;
+}
+#btn {
+	width: auto;
 }
 
 .btn {
