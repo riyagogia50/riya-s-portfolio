@@ -751,6 +751,7 @@ font-size: 15px;
 	 margin-left: -496px;
 	color: #2F4351;
 }
+
 #timeline2 {
 	    position: absolute;
     top: 10%;
@@ -770,34 +771,76 @@ font-size: 15px;
 #education h2,
 #experience h2 {
 	position: absolute;
-	top: 25%;
-	    margin-top: 480px;
-	left: 50%;
-	    margin-left: -72px;
-	    color: #2F4351;
+    top: 25%;
+     margin-top: 180px;
+    left: 50%;
+    margin-left: -514px;
+    color: #2F4351;
+    font-size: 35px;
 }
 #experience h2 {
 	margin-top: 242px;
 }
 
 
-#education p,
-#experience p {
+#education .university p {
 	position: absolute;
-	
-	margin-top: 50px;
-	left: 50%;
-	margin-left: -200px;
-	width: 400px;
-	text-align: center;
-	color: #2F4351;
+    margin-top: 74px;
+    left: 50%;
+    margin-left: 28px;
+    width: 400px;
+    text-align: center;
+    color: #2F4351;
+    text-align: -webkit-left;
+    top: 27%;
 }
-#education p {
-top: 250px;	
+
+.university img {
+	    border: 0;
+    height: 141px;
+    margin-top: 199px;
+    margin-left: -255px;
+
+
+    
 }
-#experience p {
-	margin-top: 16%;
+
+
+#education .udacity p {
+	position: absolute;
+    margin-top: 366px;
+    left: 50%;
+    margin-left: -410px;
+    width: 400px;
+    color: #2F4351;
+    text-align: -webkit-right;
+    top: 27%;
 }
+.udacity img {
+	    border: 0;
+    height: 59px;
+    margin-top: 190px;
+    margin-left: 435px;
+}
+.date1 {
+	    position: absolute;
+    margin-top: 119px;
+    left: 50%;
+    margin-left: -410px;
+    width: 400px;
+    text-align: -webkit-right;
+    top: 26%;
+}
+.date2 {
+	    position: absolute;
+    margin-top: 398px;
+    margin-left: -120px;
+    left: 50%;
+    width: 400px;
+    text-align: -webkit-right;
+    top: 26%;
+}
+
 
 #realisations {
 	background: #e8e8e0;
@@ -1068,7 +1111,10 @@ body h1 small {
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);
 	-o-transform: translateY(0);
-	transform: translateY(0)
+	transform: translateY(0);
+}
+.done#education h2 {
+	margin-top: -100px;
 }
 
 .done2#profile .primary p,
