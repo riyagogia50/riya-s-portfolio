@@ -729,7 +729,7 @@ font-size: 15px;
     top: 25%;
     margin-top: -166px;
     left: 50%;
-    margin-left: -735px;
+    margin-left: -55px;
     width: 160px;
     z-index: 999999;
 }
@@ -743,21 +743,20 @@ font-size: 15px;
 	z-index: 999999;
 }
 #timeline1 {
-	    height: 0px;
-    position: absolute;
+	 position: absolute;
     top: 10%;
-	 margin-top: 45px;
-	left: 50%;
-	 margin-left: -496px;
-	color: #2F4351;
+    margin-top: 155px;
+    left: 50%;
+    margin-left: -474px;
+    color: #2F4351;
 }
 
 #timeline2 {
 	    position: absolute;
     top: 10%;
-    margin-top: 242px;
+    margin-top: 273px;
     left: 50%;
-    margin-left: -44px;
+    margin-left: -21px;
     color: #2F4351;
 }
 #timeline3 {
@@ -765,29 +764,25 @@ font-size: 15px;
     top: 10%;
     margin-top: 525px;
     left: 50%;
-    margin-left: -44px;
+    margin-left: -21px;
     color: #2F4351;
 }
-#education h2,
-#experience h2 {
+#education h2 {
 	position: absolute;
     top: 25%;
      margin-top: 180px;
     left: 50%;
-    margin-left: -514px;
+   margin-left: -67px;
     color: #2F4351;
     font-size: 35px;
-}
-#experience h2 {
-	margin-top: 242px;
 }
 
 
 #education .university p {
-	position: absolute;
-    margin-top: 74px;
+	 position: absolute;
+    margin-top: 110px;
     left: 50%;
-    margin-left: 28px;
+    margin-left: 56px;
     width: 400px;
     text-align: center;
     color: #2F4351;
@@ -796,45 +791,51 @@ font-size: 15px;
 }
 
 .university img {
-	    border: 0;
-    height: 141px;
-    margin-top: 199px;
-    margin-left: -255px;
-
-
-    
+	    position: absolute;
+    border: 0;
+    height: 111px;
+    margin-top: 24px;
+    margin-left: -167px;
+    left: 50%;
+    text-align: -webkit-right;
+    top: 26%;
 }
 
 
 #education .udacity p {
-	position: absolute;
-    margin-top: 366px;
+	    position: absolute;
+    margin-top: 374px;
     left: 50%;
-    margin-left: -410px;
+    margin-left: -389px;
     width: 400px;
     color: #2F4351;
     text-align: -webkit-right;
     top: 27%;
+
 }
 .udacity img {
-	    border: 0;
+	position: absolute;
+    border: 0;
     height: 59px;
-    margin-top: 190px;
-    margin-left: 435px;
+    margin-top: 309px;
+    margin-left: 57px;
+    left: 50%;
+    text-align: -webkit-right;
+    top: 26%;
 }
 .date1 {
 	    position: absolute;
-    margin-top: 119px;
+    margin-top: 152px;
     left: 50%;
-    margin-left: -410px;
+    margin-left: -388px;
     width: 400px;
     text-align: -webkit-right;
     top: 26%;
 }
 .date2 {
-	    position: absolute;
-    margin-top: 398px;
-    margin-left: -120px;
+	       position: absolute;
+    margin-top: 403px;
+    margin-left: -95px;
     left: 50%;
     width: 400px;
     text-align: -webkit-right;
@@ -1114,7 +1115,7 @@ body h1 small {
 	transform: translateY(0);
 }
 .done#education h2 {
-	margin-top: -100px;
+	margin-top: -43px;
 }
 
 .done2#profile .primary p,

@@ -211,7 +211,7 @@ var homeCircle2 = t1.circle("60%", "45%", 0);
 var homeCircle3 = t1.circle("70%", "55%", 0);
 var homeCircle4 = t1.circle("53%", "52%", 0);
 var homeCircle5 = t1.circle("43%", "51%", 0);
-// $( "<div id='btn'><button class='btn btn-4'>Check Portfolio</button></div>" ).appendTo( "nav" );
+$( "<div id='btn'><button class='btn btn-4'>Check Portfolio</button></div>" ).appendTo( "nav" );
 
 
 
