@@ -745,7 +745,7 @@ font-size: 15px;
 #timeline1 {
 	 position: absolute;
     top: 10%;
-    margin-top: 155px;
+    margin-top: 177px;
     left: 50%;
     margin-left: -474px;
     color: #2F4351;
@@ -754,7 +754,7 @@ font-size: 15px;
 #timeline2 {
 	    position: absolute;
     top: 10%;
-    margin-top: 273px;
+    margin-top: 317px;
     left: 50%;
     margin-left: -21px;
     color: #2F4351;
@@ -780,7 +780,7 @@ font-size: 15px;
 
 #education .university p {
 	 position: absolute;
-    margin-top: 110px;
+    margin-top: 155px;
     left: 50%;
     margin-left: 56px;
     width: 400px;
@@ -794,7 +794,7 @@ font-size: 15px;
 	    position: absolute;
     border: 0;
     height: 111px;
-    margin-top: 24px;
+    margin-top: 69px;
     margin-left: -167px;
     left: 50%;
     text-align: -webkit-right;
@@ -825,7 +825,7 @@ font-size: 15px;
 }
 .date1 {
 	    position: absolute;
-    margin-top: 152px;
+    margin-top: 197px;
     left: 50%;
     margin-left: -388px;
     width: 400px;
@@ -1107,7 +1107,8 @@ body h1 small {
 }
 
 .done#profile .primary h2,
-.done#education h2 {
+.done#education h2 ,
+.done#education a {
 	-webkit-transform: translateY(0);
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);
