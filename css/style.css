@@ -307,19 +307,7 @@ th {
 	width: 100%
 }
 
-.music .sub_profile.music .svg img {
-	/*animation: rotate 3s linear infinite;
-	-webkit-animation: rotate 3s linear infinite*/
-}
 
-.travel .svg .travel_ns {
-	position: absolute;
-	width: auto;
-	margin-top: 51px;
-	margin-left: 43px;
-	animation: travel 10s linear infinite;
-	-webkit-animation: travel 5s linear infinite
-}
 
 @keyframes rotate {
 	100% {
@@ -333,20 +321,7 @@ th {
 	}
 }
 
-@-webkit-keyframes travel {
-	10% {
-		-webkit-transform: rotate(30deg)
-	}
-	20% {
-		-webkit-transform: rotate(-20deg)
-	}
-	50% {
-		-webkit-transform: rotate(20deg)
-	}
-	80% {
-		-webkit-transform: rotate(0)
-	}
-}
+
 
 @keyframes social {
   0% {
@@ -367,11 +342,9 @@ th {
 	-webkit-transition-duration: 2.5s;
 	-moz-transition-duration: 2.5s;
 	-o-transition-duration: 2.5s;
-	transition-duration: 2.5s
-  
-  
-
+	transition-duration: 2.5s;
 }
+
 
 
 #skills {
@@ -799,6 +772,12 @@ font-size: 15px;
     left: 50%;
     text-align: -webkit-right;
     top: 26%;
+
+   /*  -webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0)*/
 }
 
 
@@ -813,6 +792,8 @@ font-size: 15px;
     top: 27%;
 
 }
+
+
 .udacity img {
 	position: absolute;
     border: 0;
@@ -822,6 +803,12 @@ font-size: 15px;
     left: 50%;
     text-align: -webkit-right;
     top: 26%;
+/*
+    -webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0)*/
 }
 .date1 {
 	    position: absolute;
@@ -1120,7 +1107,9 @@ body h1 small {
 }
 
 .done2#profile .primary p,
-.done2#education p {
+.done2#education p,
+.done2#education .udacity img,
+.done2#education .university img {
 	-webkit-transform: translateY(0);
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);

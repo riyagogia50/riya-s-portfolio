@@ -1026,11 +1026,18 @@ function education() {
         $("#education").addClass("done2");
       }, 1200);
       // window.setTimeout(function(){
-      //   $("#experience").addClass("done");
-      // }, 1100);
+      //   $("#education").addClass("done2");
+      // }, 1200);
       // window.setTimeout(function(){
       //   $("#education").addClass("done2");
       // }, 1200);
+      // window.setTimeout(function(){
+      //   $("#education").addClass("done2");
+      // }, 1200);
+      // window.setTimeout(function(){
+      // $( "style: display: inherit; " ).appendTo( "#ease" );
+      // }, 1100);
+
 
     });
   }, 200);
