@@ -767,17 +767,11 @@ font-size: 15px;
 	    position: absolute;
     border: 0;
     height: 111px;
-    margin-top: 69px;
-    margin-left: -167px;
+    margin-top: -121px;
+    margin-left: -405px;
     left: 50%;
     text-align: -webkit-right;
     top: 26%;
-
-   /*  -webkit-transform: translateY(0);
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-o-transform: translateY(0);
-	transform: translateY(0)*/
 }
 
 
@@ -795,20 +789,14 @@ font-size: 15px;
 
 
 .udacity img {
-	position: absolute;
+	    position: absolute;
     border: 0;
-    height: 59px;
-    margin-top: 309px;
-    margin-left: 57px;
+    height: 46px;
+    margin-top: -68px;
+    margin-left: 242px;
     left: 50%;
     text-align: -webkit-right;
     top: 26%;
-/*
-    -webkit-transform: translateY(0);
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-o-transform: translateY(0);
-	transform: translateY(0)*/
 }
 .date1 {
 	    position: absolute;

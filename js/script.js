@@ -1025,12 +1025,12 @@ function education() {
       window.setTimeout(function(){
         $("#education").addClass("done2");
       }, 1200);
-      // window.setTimeout(function(){
-      //   $("#education").addClass("done2");
-      // }, 1200);
-      // window.setTimeout(function(){
-      //   $("#education").addClass("done2");
-      // }, 1200);
+      window.setTimeout(function(){
+        $("#education").addClass("done2");
+      }, 1200);
+      window.setTimeout(function(){
+        $("#education").addClass("done2");
+      }, 1200);
       // window.setTimeout(function(){
       //   $("#education").addClass("done2");
       // }, 1200);
@@ -1292,10 +1292,10 @@ function realisations () {
     $("#macbook").addClass("done");
     $("body").addClass("vinpaidone");
     $("body").addClass("vinpai");
-  }, 2100);
+  }, 1500);
   window.setTimeout(function(){
     realisationsKey();
-  }, 3000);
+  }, 1800);
 }
 
 
