@@ -59,7 +59,10 @@ template {
 }
 
 a {
-	background: transparent
+	background: transparent;
+	color: inherit;
+	font-style: normal;
+    text-decoration: none;
 }
 
 a:active,
@@ -729,7 +732,7 @@ font-size: 15px;
     top: 10%;
     margin-top: 233px;
     left: 50%;
-    margin-left: -274px;
+    margin-left: -275px;
 
 }
 #timeline3 {
@@ -738,7 +741,7 @@ font-size: 15px;
     top: 10%;
     margin-top: 440px;
     left: 50%;
-    margin-left: -274px;
+    margin-left: -275px;
    
 
 }
@@ -828,7 +831,16 @@ font-size: 15px;
 .realisations #realisations {
 	display: block
 }
-
+.pro_head {
+	position: absolute;
+    top: 25%;
+    margin-top: -113px;
+    left: 50%;
+    margin-left: -67px;
+    color: #2F4351;
+    font-size: 47px;
+    font-weight: 900;
+}
 .site {
 	position: absolute;
 	top: 50%;
@@ -1799,13 +1811,14 @@ canvas {
 }
 #btn {
 	width: auto;
+	    top: 50%;
 }
 
 .btn {
        position: fixed;
     display: inline-block;
     padding: 19px 80px;
-    margin: -110px 35.5%;
+    margin-top: -110px;
     border: none;
     background: #51344D;
     cursor: pointer;
@@ -1814,10 +1827,13 @@ canvas {
     letter-spacing: 1px;
     color: inherit;
 
+    left: 50%;
+    margin-left: -142px;
+
     -webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	-o-transition-duration: 0.5s;
-	transition-duration: 0.5s
+	transition-duration: 0.5s;
     z-index: -100;
 }
 
@@ -1838,6 +1854,7 @@ canvas {
 /* Style 4 */
 .btn-4 {
   overflow: hidden;
+  transition: ease 1s;
 }
 .btn-4:after {
     left: 50%;
@@ -1860,6 +1877,34 @@ canvas {
 .btn-4:focus {
   background-color: transparent;
 }
+
+#ic {
+    position: fixed;
+    margin-top: 108px;
+    margin-left: 218px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition: ease 1s;
+    top: 50%;
+    left: 50%;
+    
+}
+
+#ic2 {
+	 position: fixed;
+    margin-top: 147px;
+    margin-left: 255px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition: ease 1s;
+    top: 50%;
+    left: 50%;
+}
+
 
 
 /* some styles */

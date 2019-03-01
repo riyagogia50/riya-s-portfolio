@@ -30,9 +30,14 @@
 <defs>
     <style>
       .cls-1 {
+        fill: #242c3c;
+      }
+
+      .cls-2 {
         fill: #e36a5d;
       }
     </style>
   </defs>
-  <circle class="cls-1" cx="1594" cy="608" r="40"/>
+  <circle class="cls-1" cx="1599" cy="613" r="45"/>
+  <circle class="cls-2" cx="1599" cy="613" r="30"/>
 </svg>

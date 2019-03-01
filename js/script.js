@@ -284,8 +284,7 @@ function profileToHome() {
   }, 700, mina.easout, function() {
     $("body").removeClass().addClass("home devant");
     $("#profile").removeClass();
-    // $("a").addClass("btn btn-4");
-    // $("a").addClass("btn btn-4");
+    
     $("html").removeClass();
     PtHSnap.clear();
     var exp = Snap("#experiment");
@@ -1031,12 +1030,7 @@ function education() {
       window.setTimeout(function(){
         $("#education").addClass("done2");
       }, 1200);
-      // window.setTimeout(function(){
-      //   $("#education").addClass("done2");
-      // }, 1200);
-      // window.setTimeout(function(){
-      // $( "style: display: inherit; " ).appendTo( "#ease" );
-      // }, 1100);
+     
 
 
     });
@@ -1129,12 +1123,14 @@ function EducationToSavoirFaire() {
 
 
 
+
 // --------------------------------------
 //           Achievements
 // --------------------------------------
 
 
 function EducationToRealisations() {
+  $('btn').remove();
   $("#skill_to_education").attr("class", "");
   var width = $(window).width();
   var EtR = Snap("200%", "600%");
@@ -1155,6 +1151,7 @@ function EducationToRealisations() {
   window.setTimeout(function(){
     $("#education_to_realisations").attr("class", "done");
   }, 10);
+
   window.setTimeout(function(){
     $("body").removeClass().addClass("realisations");
     realisations()
@@ -1168,7 +1165,10 @@ function EducationToRealisations() {
     $("nav").attr("id", "realisation_nav");
     $("#top").attr("class", "nav done enable");
     $("#right").attr("class", "nav done");
+
   }, 700);
+ 
+
 }
 
 
@@ -1179,6 +1179,7 @@ function EducationToRealisations() {
 
 function RealisationsToEducation() {
   var width = $(window).width();
+  $("button").remove();
   var RtE = Snap("#education_to_realisations");
   var realisationRect1 = RtE.rect(0, 0, 30, width*4).attr({
     fill: "#a2cecd"
@@ -1211,6 +1212,7 @@ function RealisationsToEducation() {
     $("#top, #bottom").attr("class", "nav done");
 	$("#right").attr("class", "nav done enable");
   }, 700);
+
 }
 
 
@@ -1266,6 +1268,11 @@ function realisations () {
 
   window.setTimeout(function(){
     $(".site_imac.vinpai").addClass("done");
+     $("button").remove();
+     $("#btn").remove();
+     window.setTimeout(function(){
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog'>Check source code</a></button></div>");
+    }, 1800);
   }, 10);
   imactopMask.animate({
     width: 360,
@@ -1339,6 +1346,12 @@ function detectionRealisationDeOuf(dir, action) {
     delay=true;
     $("#bottom").attr("class", "nav done enable");
     $("body").removeClass("vinpai").addClass("brilliant");
+     $("button").remove();
+     $("#btn").remove();
+      window.setTimeout(function(){
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant'>Check source code</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='brilliant/index.html'>View page</a></button></div>");
+    }, 1500);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
@@ -1346,6 +1359,11 @@ function detectionRealisationDeOuf(dir, action) {
     delay=true;
     $("#top").attr("class", "nav done");
     $("body").removeClass("brilliant").addClass("blog");
+     $("button").remove();
+     $("#btn").remove();
+      window.setTimeout(function(){
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/cms-blog'>Check source code</a></button></div>");
+    }, 1500);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
@@ -1355,13 +1373,28 @@ function detectionRealisationDeOuf(dir, action) {
     delay=true;
     $("#bottom").attr("class", "nav done");
     $("body").removeClass("brilliant").addClass("vinpai");
+    $("button").remove();
+    $("#btn").remove();
+    window.setTimeout(function(){
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog'>Check source code</a></button></div>");
+    }, 1500);
     window.setTimeout(function(){delay=false;}, 500);
   }
+
+
+
 
   if(dir == "bottom" && action == "realisations vinpaidone blog" && !delay){
     delay=true;
     $("#top").attr("class", "nav done enable");
     $("body").removeClass("blog").addClass("brilliant");
+    $("button").remove();
+    $("#btn").remove();
+    window.setTimeout(function(){
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant'>Check source code</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='https://github.com/ayseth/brilliant'>View page</a></button></div>");
+    }, 1500);
+    
     window.setTimeout(function(){delay=false;}, 500);
   }
 }
