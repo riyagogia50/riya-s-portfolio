@@ -1271,8 +1271,8 @@ function realisations () {
      $("button").remove();
      $("#btn").remove();
      window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog'>Check source code</a></button></div>");
-    }, 1800);
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button></div>");
+    }, 3000);
   }, 10);
   imactopMask.animate({
     width: 360,
@@ -1349,8 +1349,8 @@ function detectionRealisationDeOuf(dir, action) {
      $("button").remove();
      $("#btn").remove();
       window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant'>Check source code</a></button></div>");
-    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='brilliant/index.html'>View page</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='brilliant/index.html' target='_blank'>View page</a></button></div>");
     }, 1500);
     window.setTimeout(function(){delay=false;}, 500);
   }
@@ -1362,7 +1362,7 @@ function detectionRealisationDeOuf(dir, action) {
      $("button").remove();
      $("#btn").remove();
       window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/cms-blog'>Check source code</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/cms-blog' target='_blank'>Check source code</a></button></div>");
     }, 1500);
     window.setTimeout(function(){delay=false;}, 500);
   }
@@ -1376,7 +1376,7 @@ function detectionRealisationDeOuf(dir, action) {
     $("button").remove();
     $("#btn").remove();
     window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog'>Check source code</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button></div>");
     }, 1500);
     window.setTimeout(function(){delay=false;}, 500);
   }
@@ -1391,8 +1391,8 @@ function detectionRealisationDeOuf(dir, action) {
     $("button").remove();
     $("#btn").remove();
     window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant'>Check source code</a></button></div>");
-    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='https://github.com/ayseth/brilliant'>View page</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='https://github.com/ayseth/brilliant' target='_blank'>View page</a></button></div>");
     }, 1500);
     
     window.setTimeout(function(){delay=false;}, 500);
