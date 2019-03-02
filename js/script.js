@@ -1,12 +1,6 @@
 $(document).ready(function(){
-console.log("this is an open source code, don't hesitate t take it XD ");
-console.log("SCSS is here:");
-console.log("scss/style.scss");
-console.log("scss/_normalize.scss");
-console.log("scss/_sections.scss");
-console.log("scss/_loader.scss");
-console.log("scss/_font.scss");
-console.log("scss/_animate.scss");
+console.log("this is an open source code, don't hesitate to take it XD ");
+
 
 if (navigator.userAgent.match(/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi) || navigator.userAgent.match(/ipad/gi)) {
   $("html").addClass("mobile");
@@ -101,7 +95,7 @@ function detectionDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 3500);
   }
 
-  if(dir == "left" && action.indexOf("projects sampledone") == 0 && !delay){
+  if(dir == "left" && action.indexOf("projects item-catdone") == 0 && !delay){
     delay=true;
     RealisationsToEducation();
     window.setTimeout(function(){delay=false;}, 3500);
@@ -1200,7 +1194,7 @@ function RealisationsToEducation() {
   window.setTimeout(function(){
     $("body").removeClass().addClass("education");
     education()
-    $(".site_imac.sample").removeClass("done");
+    $(".site_imac.item-cat").removeClass("done");
     $("#macbook").removeClass();
     $("#education_to_projects").attr("class", "");
     $("#education_to_projects").remove();
@@ -1267,7 +1261,7 @@ function realisations () {
   });
 
   window.setTimeout(function(){
-    $(".site_imac.sample").addClass("done");
+    $(".site_imac.item-cat").addClass("done");
      $("button").remove();
      $("#btn").remove();
      window.setTimeout(function(){
@@ -1297,8 +1291,8 @@ function realisations () {
     
   window.setTimeout(function(){
     $("#macbook").addClass("done");
-    $("body").addClass("sampledone");
-    $("body").addClass("sample");
+    $("body").addClass("item-catdone");
+    $("body").addClass("item-cat");
   }, 100);
   window.setTimeout(function(){
     realisationsKey();
@@ -1342,20 +1336,20 @@ function realisationsKey() {
 
 function detectionRealisationDeOuf(dir, action) {
 
-  if(dir == "top" && action == "projects sampledone sample" && !delay){
+  if(dir == "top" && action == "projects item-catdone item-cat" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done enable");
-    $("body").removeClass("sample").addClass("brilliant");
+    $("body").removeClass("item-cat").addClass("brilliant");
      $("button").remove();
      $("#btn").remove();
       window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
-    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='sample sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
     }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
-  if(dir == "top" && action == "projects sampledone brilliant" && !delay){
+  if(dir == "top" && action == "projects item-catdone brilliant" && !delay){
     delay=true;
     $("#top").attr("class", "nav done");
     $("body").removeClass("brilliant").addClass("blog");
@@ -1369,10 +1363,10 @@ function detectionRealisationDeOuf(dir, action) {
 
 
 
-  if(dir == "bottom" && action == "projects sampledone brilliant" && !delay){
+  if(dir == "bottom" && action == "projects item-catdone brilliant" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done");
-    $("body").removeClass("brilliant").addClass("sample");
+    $("body").removeClass("brilliant").addClass("item-cat");
     $("button").remove();
     $("#btn").remove();
     window.setTimeout(function(){
@@ -1384,7 +1378,7 @@ function detectionRealisationDeOuf(dir, action) {
 
 
 
-  if(dir == "bottom" && action == "projects sampledone blog" && !delay){
+  if(dir == "bottom" && action == "projects item-catdone blog" && !delay){
     delay=true;
     $("#top").attr("class", "nav done enable");
     $("body").removeClass("blog").addClass("brilliant");
@@ -1392,7 +1386,7 @@ function detectionRealisationDeOuf(dir, action) {
     $("#btn").remove();
     window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
-    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='sample sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
+    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
     }, 1300);
     
     window.setTimeout(function(){delay=false;}, 500);
