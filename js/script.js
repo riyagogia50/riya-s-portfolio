@@ -29,13 +29,13 @@ $("#left").click(function(e) {
 delay=true;
 window.setTimeout(function(){delay=false;}, 3000);
 $(document).keydown(function (evenement){
-  if(evenement.which == 39){ // Fleche right
+  if(evenement.which == 39){ // Arrow right
     var dir = "right";
     var action = $("body").attr("class");
     detectionDeOuf(dir, action);
   }
   
-  if(evenement.which == 37){ // Fleche left
+  if(evenement.which == 37){ // Arrow left
     var dir = "left";
     var action = $("body").attr("class");
     detectionDeOuf(dir, action);
@@ -101,7 +101,7 @@ function detectionDeOuf(dir, action) {
     window.setTimeout(function(){delay=false;}, 3500);
   }
 
-  if(dir == "left" && action.indexOf("realisations vinpaidone") == 0 && !delay){
+  if(dir == "left" && action.indexOf("projects sampledone") == 0 && !delay){
     delay=true;
     RealisationsToEducation();
     window.setTimeout(function(){delay=false;}, 3500);
@@ -384,13 +384,13 @@ $("#bottom").click(function(e) {
 });
 
 $(document).keydown(function (evenement){
-  if(evenement.which == 38){ // Fleche top
+  if(evenement.which == 38){ // Arrow top
     var dir = "top";
     var action = $("body").attr("class");
     detectionProfileDeOuf(dir, action);
   }
   
-  if(evenement.which == 40){ // Fleche bottom
+  if(evenement.which == 40){ // Arrow bottom
     var dir = "bottom";
     var action = $("body").attr("class");
     detectionProfileDeOuf(dir, action);
@@ -1125,7 +1125,7 @@ function EducationToSavoirFaire() {
 
 
 // --------------------------------------
-//           Achievements
+//           Projects
 // --------------------------------------
 
 
@@ -1134,7 +1134,7 @@ function EducationToRealisations() {
   $("#skill_to_education").attr("class", "");
   var width = $(window).width();
   var EtR = Snap("200%", "600%");
-  EtR.attr({id: "education_to_realisations"});
+  EtR.attr({id: "education_to_projects"});
   var realisationRect1 = EtR.rect(0, 0, 30, width*4).attr({
     fill: "#e8e8e0"
   });
@@ -1149,14 +1149,14 @@ function EducationToRealisations() {
   });
 
   window.setTimeout(function(){
-    $("#education_to_realisations").attr("class", "done");
+    $("#education_to_projects").attr("class", "done");
   }, 10);
 
   window.setTimeout(function(){
-    $("body").removeClass().addClass("realisations");
+    $("body").removeClass().addClass("projects");
     realisations()
     $("#education").removeClass();
-    $("#education_to_realisations").attr("class", "");
+    $("#education_to_projects").attr("class", "");
     EtR.clear();
     var education = Snap("#education_img");
     education.clear();
@@ -1180,7 +1180,7 @@ function EducationToRealisations() {
 function RealisationsToEducation() {
   var width = $(window).width();
   $("button").remove();
-  var RtE = Snap("#education_to_realisations");
+  var RtE = Snap("#education_to_projects");
   var realisationRect1 = RtE.rect(0, 0, 30, width*4).attr({
     fill: "#a2cecd"
   });
@@ -1195,15 +1195,15 @@ function RealisationsToEducation() {
   });
 
   window.setTimeout(function(){
-    $("#education_to_realisations").attr("class", "done");
+    $("#education_to_projects").attr("class", "done");
   }, 10);
   window.setTimeout(function(){
     $("body").removeClass().addClass("education");
     education()
-    $(".site_imac.vinpai").removeClass("done");
+    $(".site_imac.sample").removeClass("done");
     $("#macbook").removeClass();
-    $("#education_to_realisations").attr("class", "");
-    $("#education_to_realisations").remove();
+    $("#education_to_projects").attr("class", "");
+    $("#education_to_projects").remove();
     var imac = Snap("#imac");
     imac.clear();
   }, 1000);
@@ -1267,12 +1267,12 @@ function realisations () {
   });
 
   window.setTimeout(function(){
-    $(".site_imac.vinpai").addClass("done");
+    $(".site_imac.sample").addClass("done");
      $("button").remove();
      $("#btn").remove();
      window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button></div>");
-    }, 3000);
+    }, 1500);
   }, 10);
   imactopMask.animate({
     width: 360,
@@ -1297,8 +1297,8 @@ function realisations () {
     
   window.setTimeout(function(){
     $("#macbook").addClass("done");
-    $("body").addClass("vinpaidone");
-    $("body").addClass("vinpai");
+    $("body").addClass("sampledone");
+    $("body").addClass("sample");
   }, 100);
   window.setTimeout(function(){
     realisationsKey();
@@ -1324,13 +1324,13 @@ function realisationsKey() {
   });
 
   $(document).keydown(function (evenement){
-    if(evenement.which == 38){ // Fleche top
+    if(evenement.which == 38){ // Arrow top
       var dir = "top";
       var action = $("body").attr("class");
       detectionRealisationDeOuf(dir, action);
     }
     
-    if(evenement.which == 40){ // Fleche bottom
+    if(evenement.which == 40){ // Arrow bottom
       var dir = "bottom";
       var action = $("body").attr("class");
       detectionRealisationDeOuf(dir, action);
@@ -1342,20 +1342,20 @@ function realisationsKey() {
 
 function detectionRealisationDeOuf(dir, action) {
 
-  if(dir == "top" && action == "realisations vinpaidone vinpai" && !delay){
+  if(dir == "top" && action == "projects sampledone sample" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done enable");
-    $("body").removeClass("vinpai").addClass("brilliant");
+    $("body").removeClass("sample").addClass("brilliant");
      $("button").remove();
      $("#btn").remove();
       window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
     $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='sample sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
-    }, 1500);
+    }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
-  if(dir == "top" && action == "realisations vinpaidone brilliant" && !delay){
+  if(dir == "top" && action == "projects sampledone brilliant" && !delay){
     delay=true;
     $("#top").attr("class", "nav done");
     $("body").removeClass("brilliant").addClass("blog");
@@ -1363,28 +1363,28 @@ function detectionRealisationDeOuf(dir, action) {
      $("#btn").remove();
       window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/cms-blog' target='_blank'>Check source code</a></button></div>");
-    }, 1500);
+    }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
 
 
-  if(dir == "bottom" && action == "realisations vinpaidone brilliant" && !delay){
+  if(dir == "bottom" && action == "projects sampledone brilliant" && !delay){
     delay=true;
     $("#bottom").attr("class", "nav done");
-    $("body").removeClass("brilliant").addClass("vinpai");
+    $("body").removeClass("brilliant").addClass("sample");
     $("button").remove();
     $("#btn").remove();
     window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button></div>");
-    }, 1500);
+    }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
 
 
 
-  if(dir == "bottom" && action == "realisations vinpaidone blog" && !delay){
+  if(dir == "bottom" && action == "projects sampledone blog" && !delay){
     delay=true;
     $("#top").attr("class", "nav done enable");
     $("body").removeClass("blog").addClass("brilliant");
@@ -1393,7 +1393,7 @@ function detectionRealisationDeOuf(dir, action) {
     window.setTimeout(function(){
     $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
     $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='sample sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
-    }, 1500);
+    }, 1300);
     
     window.setTimeout(function(){delay=false;}, 500);
   }
