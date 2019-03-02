@@ -312,6 +312,7 @@ th {
 
 
 
+
 @keyframes rotate {
 	100% {
 		transform: rotate(360deg)
@@ -351,7 +352,7 @@ th {
 
 
 #skills {
-	color: #ea9a9d
+	color: #ea9a9d;
 }
 
 .skills.devant #skills {
@@ -811,7 +812,10 @@ font-size: 15px;
     width: 400px;
     text-align: -webkit-right;
     top: 26%;
+   -moz-margin-start: -298px;
+
 }
+
 .date2 {
 	       position: absolute;
     margin-top: 403px;
@@ -820,6 +824,7 @@ font-size: 15px;
     width: 400px;
     text-align: -webkit-right;
     top: 26%;
+    -moz-margin-start: -20px;
 }
 
 

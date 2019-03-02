@@ -1299,7 +1299,7 @@ function realisations () {
     $("#macbook").addClass("done");
     $("body").addClass("vinpaidone");
     $("body").addClass("vinpai");
-  }, 1500);
+  }, 100);
   window.setTimeout(function(){
     realisationsKey();
   }, 1800);
