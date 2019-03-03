@@ -22,19 +22,19 @@ $("#left").click(function(e) {
 
 delay=true;
 window.setTimeout(function(){delay=false;}, 3000);
-$(document).keydown(function (evenement){
-  if(evenement.which == 39){ // Arrow right
+$(document).keydown(function (event){
+  if(event.which == 39){ // Arrow right
     var dir = "right";
     var action = $("body").attr("class");
     detectionDeOuf(dir, action);
   }
   
-  if(evenement.which == 37){ // Arrow left
+  if(event.which == 37){ // Arrow left
     var dir = "left";
     var action = $("body").attr("class");
     detectionDeOuf(dir, action);
   }
-  evenement.preventDefault();
+  event.preventDefault();
 });
 
 
@@ -67,37 +67,37 @@ function detectionDeOuf(dir, action) {
 
   if(dir == "right" && action.indexOf("profile") == 0 && !delay){
     delay=true;
-    profileToSavoirFaire();
+    profileToSkills();
     window.setTimeout(function(){delay=false;}, 2000);
   }
 
   if(dir == "left" && action == "skills devant" && !delay){
     delay=true;
-    savoirFaireToProfile();
+    SkillsToProfile();
     window.setTimeout(function(){delay=false;}, 2500);
   }
 
   if(dir == "right" && action == "skills devant" && !delay){
     delay=true;
-    SavoirFaireToEducation();
+    SkillsToEducation();
     window.setTimeout(function(){delay=false;}, 3500);
   }
 
   if(dir == "left" && action == "education" && !delay){
     delay=true;
-    EducationToSavoirFaire();
+    EducationToSkills();
     window.setTimeout(function(){delay=false;}, 3500);
   }
 
   if(dir == "right" && action == "education" && !delay){
     delay=true;
-    EducationToRealisations();
+    EducationToProjects();
     window.setTimeout(function(){delay=false;}, 3500);
   }
 
   if(dir == "left" && action.indexOf("projects item-catdone") == 0 && !delay){
     delay=true;
-    RealisationsToEducation();
+    ProjectsToEducation();
     window.setTimeout(function(){delay=false;}, 3500);
   }
 }
@@ -205,7 +205,7 @@ var homeCircle2 = t1.circle("60%", "45%", 0);
 var homeCircle3 = t1.circle("70%", "55%", 0);
 var homeCircle4 = t1.circle("53%", "52%", 0);
 var homeCircle5 = t1.circle("43%", "51%", 0);
-$( "<div id='btn'><button class='btn btn-4'>Check Portfolio</button></div>" ).appendTo( "nav" );
+// $( "<div id='btn'><button class='btn btn-4'>Check Portfolio</button></div>" ).appendTo( "nav" );
 
 
 
@@ -377,19 +377,19 @@ $("#bottom").click(function(e) {
   e.preventDefault();
 });
 
-$(document).keydown(function (evenement){
-  if(evenement.which == 38){ // Arrow top
+$(document).keydown(function (event){
+  if(event.which == 38){ // Arrow top
     var dir = "top";
     var action = $("body").attr("class");
     detectionProfileDeOuf(dir, action);
   }
   
-  if(evenement.which == 40){ // Arrow bottom
+  if(event.which == 40){ // Arrow bottom
     var dir = "bottom";
     var action = $("body").attr("class");
     detectionProfileDeOuf(dir, action);
   }
-  evenement.preventDefault();
+  event.preventDefault();
 });
 
 } // FIN profileKey()
@@ -526,15 +526,15 @@ function detectionProfileDeOuf(dir, action) {
 //            Skill
 // --------------------------------------
   
-function savoirFaireToProfile () {
-  var taille = ($(window).width()+$(window).height())/2;
+function SkillsToProfile () {
+  var cut = ($(window).width()+$(window).height())/2;
   var SFtP = Snap("#skill_to_profile");
   $("#skill_to_profile").attr("class", "here");
-  var savoirFaireToProfileCircle = SFtP.circle("50%", "50%", 0).attr({
+  var SkillsToProfileCircle = SFtP.circle("50%", "50%", 0).attr({
     fill: "#e8e8e0",
   });
-  savoirFaireToProfileCircle.animate({
-    r: taille
+  SkillsToProfileCircle.animate({
+    r: cut
   }, 1100, mina.easeinout, function() {
     SFtP.clear();
     var c1 = Snap("#big_circle");
@@ -556,7 +556,7 @@ function savoirFaireToProfile () {
     $("nav").attr("id", "profile_nav");
     $("#top").attr("class", "nav done enable");
   }, 600);
-} // FIN profileToSavoirFaire()
+} // FIN profileToSkills()
   
   
   
@@ -572,29 +572,29 @@ function savoirFaireToProfile () {
   
   
   
-function profileToSavoirFaire() {
+function profileToSkills() {
   
   var PtSFSnap = Snap("#profile_to_skill");
   var cx= $(window).width()/2,
       cy= $(window).height()/2,
       width= $(window).width(),
       r= width/2;
-  var profileToSavoirfaireCircle = PtSFSnap.path("M "+cx+" "+cy+" m "+ (-r) +", 0 a "+r+","+r+" 0 1,0 "+ r*2 +",0 a "+r+","+r+" 0 1,0 "+ (-r*2) +",0").attr({
+  var profileToSkillsCircle = PtSFSnap.path("M "+cx+" "+cy+" m "+ (-r) +", 0 a "+r+","+r+" 0 1,0 "+ r*2 +",0 a "+r+","+r+" 0 1,0 "+ (-r*2) +",0").attr({
     fill: "none",
     strokeWidth: width,
     stroke: "#ea9a9d",
     strokeDasharray: "18 18",
   });
-  var taille = profileToSavoirfaireCircle.getTotalLength();
-  profileToSavoirfaireCircle.attr({
-    strokeDasharray: taille + " " + taille,
-    strokeDashoffset: taille
+  var cut = profileToSkillsCircle.getTotalLength();
+  profileToSkillsCircle.attr({
+    strokeDasharray: cut + " " + cut,
+    strokeDashoffset: cut
   });
-  profileToSavoirfaireCircle.animate({
+  profileToSkillsCircle.animate({
     strokeDashoffset: 0
   }, 1400, mina.easeinout);
-  profileToSavoirfaireCircle.animate( { transform: "r -90, "+cx+", "+cy}, 1 );
-  profileToSavoirfaireCircle.animate( { transform: "r -180, "+cx+", "+cy}, 1400, function() {
+  profileToSkillsCircle.animate( { transform: "r -90, "+cx+", "+cy}, 1 );
+  profileToSkillsCircle.animate( { transform: "r -180, "+cx+", "+cy}, 1400, function() {
     $("body").removeClass().addClass("skills devant");
     $("#profile").removeClass();
     $("html").removeClass();
@@ -610,7 +610,7 @@ function profileToSavoirFaire() {
   }, 800);
   skills(1200);
 
-} // FIN profileToSavoirFaire()
+} // FIN profileToSkills()
 
 
 
@@ -643,7 +643,7 @@ function skills(delay) {
   var os = Snap("#os");
   var softwares = Snap("#software");
 
-  function skill_circles(name, taille, x, y, number) {
+  function skill_circles(name, cut, x, y, number) {
     var all = Snap("#all");
     var height0 = $(window).height()/2;
     var width0 = $(window).width()/2;
@@ -706,7 +706,7 @@ function skills(delay) {
         stroke: color,
         strokeWidth: 7
       });
-      name.animate({r: taille}, 700, mina.elastic);
+      name.animate({r: cut}, 700, mina.elastic);
 
       var namesmall = all.circle(300, 300, 0);
       namesmall.attr({
@@ -714,7 +714,7 @@ function skills(delay) {
         cy: y,
         fill: "#e8e8e0"
       });
-      namesmall.animate({r: taille*0.8}, 300, mina.easeout);
+      namesmall.animate({r: cut*0.8}, 300, mina.easeout);
       if (!number) {
         window.setTimeout(function(){
           moveYourBody()
@@ -722,8 +722,8 @@ function skills(delay) {
         function moveYourBody() {
         var temps= Math.random()*4000+2000;
           window.setTimeout(function(){
-            name.animate({r: taille*1.08}, 200, mina.easeout, function() {
-              name.animate({r: taille}, 200, mina.easeout, function() {
+            name.animate({r: cut*1.08}, 200, mina.easeout, function() {
+              name.animate({r: cut}, 200, mina.easeout, function() {
                 moveYourBody()
               });
             });
@@ -822,19 +822,19 @@ function skills(delay) {
     function Os_Hover() {
       if (Os) {
         window.setTimeout(function(){
-          skill_circles("Mac", 45, 32, 54, 4);
+          skill_circles("sql", 45, 32, 54, 4);
         });
 
         window.setTimeout(function(){
-          skill_circles("Windows", 45, 13, 86, 4);
+          skill_circles("vb", 45, 13, 86, 4);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("IOS", 45, 19, 68, 4);
+          skill_circles("java", 45, 19, 68, 4);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("Android", 45, 38, 89, 4);
+          skill_circles("cpp", 45, 38, 89, 4);
         }, 100);
       }
       Os=false;
@@ -850,15 +850,15 @@ function skills(delay) {
         });
 
         window.setTimeout(function(){
-          skill_circles("Illustrator", 50, 89, 66, 5);
+          skill_circles("adobexd", 50, 89, 66, 5);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("After_effect", 50, 83, 86, 5);
+          skill_circles("git", 50, 83, 86, 5);
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("C4D", 50, 62, 79, 5);
+          skill_circles("Lin", 50, 62, 79, 5);
         }, 100);
 
         window.setTimeout(function(){
@@ -897,7 +897,7 @@ function skills(delay) {
 //            Education
 // --------------------------------------
   
-function SavoirFaireToEducation() {
+function SkillsToEducation() {
   var width = $(window).width();
   $("#skill_to_education").attr("class", "here");
   var SFtE = Snap("#skill_to_education");
@@ -1040,7 +1040,7 @@ function education() {
   
   
   
-function EducationToSavoirFaire() {
+function EducationToSkills() {
   var width = $(window).width();
   var SFtE = Snap("#skill_to_education");
   $("#skill_to_education").attr("class", "here");
@@ -1123,7 +1123,7 @@ function EducationToSavoirFaire() {
 // --------------------------------------
 
 
-function EducationToRealisations() {
+function EducationToProjects() {
   $('btn').remove();
   $("#skill_to_education").attr("class", "");
   var width = $(window).width();
@@ -1171,7 +1171,7 @@ function EducationToRealisations() {
 
 
 
-function RealisationsToEducation() {
+function ProjectsToEducation() {
   var width = $(window).width();
   $("button").remove();
   var RtE = Snap("#education_to_projects");
@@ -1317,19 +1317,19 @@ function realisationsKey() {
     e.preventDefault();
   });
 
-  $(document).keydown(function (evenement){
-    if(evenement.which == 38){ // Arrow top
+  $(document).keydown(function (event){
+    if(event.which == 38){ // Arrow top
       var dir = "top";
       var action = $("body").attr("class");
       detectionRealisationDeOuf(dir, action);
     }
     
-    if(evenement.which == 40){ // Arrow bottom
+    if(event.which == 40){ // Arrow bottom
       var dir = "bottom";
       var action = $("body").attr("class");
       detectionRealisationDeOuf(dir, action);
     }
-    evenement.preventDefault();
+    event.preventDefault();
   });
 } // FIN realisationsKey()
 

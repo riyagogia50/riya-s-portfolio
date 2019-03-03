@@ -621,7 +621,7 @@ th {
 	width: 120px
 }
 
-.mac {
+.sql {
 	font-size: 19px;
 	top: 54%;
 	left: 32%;
@@ -630,7 +630,7 @@ th {
 	width: 120px
 }
 
-.windows {
+.vb {
 	font-size: 20px;
     top: 86%;
     left: 13%;
@@ -639,7 +639,7 @@ th {
     width: 120px;
 }
 
-.ios {
+.java {
 	font-size: 18px;
 	top: 68%;
 	left: 19%;
@@ -648,7 +648,7 @@ th {
 	width: 120px
 }
 
-.android {
+.cpp {
 	font-size: 17px;
     top: 89%;
     left: 38%;
@@ -667,7 +667,7 @@ th {
     width: 120px;
 }
 
-.illustrator {
+.adobexd {
 	font-size: 12px;
 	top: 66%;
 	left: 89%;
@@ -676,7 +676,7 @@ th {
 	width: 120px
 }
 
-.after_effect {
+.git {
 	font-size: 16px;
 	top: 86%;
 	left: 83%;
@@ -686,7 +686,7 @@ th {
 	line-height: 17px
 }
 
-.cinema_4D {
+.linux {
 	font-size: 15px;
     top: 79%;
     left: 62%;
@@ -2159,4 +2159,7 @@ h1 { font-weight: normal; }
   border-color: transparent;
   transform: translate(-50%, 100%);
 }
+
+
+
 
