@@ -862,8 +862,8 @@ font-size: 15px;
 
 
 #projects {
-	background: #e8e8e0;
-	color: #7a8088;
+	background: #a3cea2;
+    color: #45614a;
 }
 
 .projects #projects {
@@ -1407,7 +1407,8 @@ body.travel .travel p {
 	transition-duration: 1s
 }
 
-.site h2 {
+.site h2
+{
 	-webkit-transform: translateX(100px);
 	-moz-transform: translateX(100px);
 	-ms-transform: translateX(100px);
@@ -1669,7 +1670,7 @@ nav .enable {
 nav#profile_nav .nav circle,
 nav#realisation_nav .nav circle {
 	stroke: #7a8088;
-	fill: #e8e8e0;
+	fill: transparent;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
 	-o-transition: all 0.4s;

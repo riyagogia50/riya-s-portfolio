@@ -1263,10 +1263,10 @@ function realisations () {
   window.setTimeout(function(){
     $(".site_imac.item-cat").addClass("done");
      $("button").remove();
-     $("#btn").remove();
-     window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button></div>");
-    }, 1500);
+    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button>");
+    //  window.setTimeout(function(){
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // }, 1500);
   }, 10);
   imactopMask.animate({
     width: 360,
@@ -1341,11 +1341,13 @@ function detectionRealisationDeOuf(dir, action) {
     $("#bottom").attr("class", "nav done enable");
     $("body").removeClass("item-cat").addClass("brilliant");
      $("button").remove();
-     $("#btn").remove();
-      window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
-    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
-    }, 1300);
+     $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button>");
+    $("#btn").remove("button").append("<button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button>");
+
+    //   window.setTimeout(function(){
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
@@ -1354,10 +1356,10 @@ function detectionRealisationDeOuf(dir, action) {
     $("#top").attr("class", "nav done");
     $("body").removeClass("brilliant").addClass("blog");
      $("button").remove();
-     $("#btn").remove();
-      window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/cms-blog' target='_blank'>Check source code</a></button></div>");
-    }, 1300);
+     $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/cms-blog' target='_blank'>Check source code</a></button>");
+    //   window.setTimeout(function(){
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
@@ -1368,10 +1370,11 @@ function detectionRealisationDeOuf(dir, action) {
     $("#bottom").attr("class", "nav done");
     $("body").removeClass("brilliant").addClass("item-cat");
     $("button").remove();
-    $("#btn").remove();
-    window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button></div>");
-    }, 1300);
+    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a></button>");
+
+    // window.setTimeout(function(){
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // }, 1300);
     window.setTimeout(function(){delay=false;}, 500);
   }
 
@@ -1383,11 +1386,13 @@ function detectionRealisationDeOuf(dir, action) {
     $("#top").attr("class", "nav done enable");
     $("body").removeClass("blog").addClass("brilliant");
     $("button").remove();
-    $("#btn").remove();
-    window.setTimeout(function(){
-    $("#realisation_nav").append("<div id='btn'><button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button></div>");
-    $("#realisation_nav").append("<div id='btn'><button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button></div>");
-    }, 1300);
+    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button>");
+        $("#btn").remove("button").append("<button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button>");
+
+    // window.setTimeout(function(){
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // $("#realisation_nav").append("<div id='btn'></div>");
+    // }, 1300);
     
     window.setTimeout(function(){delay=false;}, 500);
   }
