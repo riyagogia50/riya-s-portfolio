@@ -310,7 +310,7 @@ th {
 	width: 100%
 }
 
-
+/* ANIMATIONS */
 
 
 @keyframes rotate {
@@ -369,6 +369,31 @@ th {
     -webkit-transform: translateX(0);
   }
 }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 
 .social-icons {  
   animation: 1s ease-out 0s 1 social;
@@ -2174,28 +2199,7 @@ span:nth-of-type(3) {
   -webkit-animation-delay: .3s;
   animation-delay: .3s;
 }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 
 
 

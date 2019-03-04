@@ -108,7 +108,7 @@ function detectionDeOuf(dir, action) {
   
   
 // --------------------------------------
-//               Chargement
+//             Load Buttons
 // --------------------------------------  
   
 $(window).load(function() {
@@ -210,7 +210,7 @@ $( "<div id='main'>Check Portfolio</div><div id='scroll' class='demo'<a><span></
 
 
 
-} // FIN home()
+} // END home()
   
 
 function homeToProfile() {
@@ -249,7 +249,7 @@ function homeToProfile() {
     }, 200);
     profile()
   }, 200);
-}// FIN homeToProfile()
+}// END homeToProfile()
 
   
 
@@ -293,7 +293,7 @@ function profileToHome() {
       home();
     }, 700);
   });
-}// FIN profileToHome()
+}// END profileToHome()
   
   
   
@@ -362,7 +362,7 @@ function profile() {
     });
   });
 
-}// FIN profile()    
+}// END profile()    
 function profileKey() {
 
 $("#top").click(function(e) {
@@ -393,7 +393,7 @@ $(document).keydown(function (event){
   event.preventDefault();
 });
 
-} // FIN profileKey()
+} // END profileKey()
 
 
 function detectionProfileDeOuf(dir, action) {
@@ -557,7 +557,7 @@ function SkillsToProfile () {
     $("nav").attr("id", "profile_nav");
     $("#top").attr("class", "nav done enable");
   }, 600);
-} // FIN profileToSkills()
+} // END profileToSkills()
   
   
   
@@ -611,7 +611,7 @@ function profileToSkills() {
   }, 800);
   skills(1200);
 
-} // FIN profileToSkills()
+} // END profileToSkills()
 
 
 
@@ -875,7 +875,7 @@ function skills(delay) {
   }, 2100);
 
   
-} // FIN skills()
+} // END skills()
   
   
   
@@ -1019,18 +1019,13 @@ function education() {
       window.setTimeout(function(){
         $("#education").addClass("done2");
       }, 1200);
-      window.setTimeout(function(){
-        $("#education").addClass("done2");
-      }, 1200);
-      window.setTimeout(function(){
-        $("#education").addClass("done2");
-      }, 1200);
+     
      
 
 
     });
   }, 200);
-} // FIN education()
+} // END education()
   
   
   
@@ -1336,7 +1331,7 @@ function realisationsKey() {
     }
     event.preventDefault();
   });
-} // FIN realisationsKey()
+} // END realisationsKey()
 
 
 function detectionRealisationDeOuf(dir, action) {
@@ -1424,5 +1419,3 @@ function detectionRealisationDeOuf(dir, action) {
 });
 
 
-
-/*button*/
