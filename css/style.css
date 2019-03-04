@@ -1192,9 +1192,9 @@ body h1 small {
 	transition-timing-function: cubic-bezier(0.000, 0.000, 0.500, 1.000)
 }
 
-body.music .music .svg,
+body.read .read .svg,
 body.experiment .experiment .svg,
-body.travel .travel .svg {
+body.sketch .sketch .svg {
 	-webkit-transform: translateY(0);
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);
@@ -1214,9 +1214,9 @@ body.travel .travel .svg {
 	transition-timing-function: cubic-bezier(0.000, 0.500, 0.000, 1.000)
 }
 
-body.experiment .music .svg,
-body.travel .music .svg,
-body.travel .experiment .svg {
+body.experiment .read .svg,
+body.sketch .read .svg,
+body.sketch .experiment .svg {
 	-webkit-transform: translateY(700px);
 	-moz-transform: translateY(700px);
 	-ms-transform: translateY(700px);
@@ -1262,9 +1262,9 @@ body.travel .experiment .svg {
 	transition-timing-function: cubic-bezier(0.000, 0.000, 0.500, 1.000)
 }
 
-body.music .music h3,
+body.read .read h3,
 body.experiment .experiment h3,
-body.travel .travel h3 {
+body.sketch .sketch h3 {
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
@@ -1285,9 +1285,9 @@ body.travel .travel h3 {
 	transition-timing-function: cubic-bezier(0.000, 0.000, 0.500, 1.000)
 }
 
-body.music .music p,
+body.read .read p,
 body.experiment .experiment p,
-body.travel .travel p {
+body.sketch .sketch p {
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
@@ -1844,83 +1844,13 @@ canvas {
 	/*width: 100vw;
 	height: 100vh;*/
 	cursor: pointer;
-	/*z-index: -1;*/
+	    height: 100%;
 }
 
 
 
 .exp>h2 {
 	margin-top: 60%;
-}
-#btn {
-	width: auto;
-	    top: 50%;
-	    
-}
-
-.btn {
-       position: fixed;
-    display: inline-block;
-    padding: 19px 80px;
-    margin-top: -110px;
-    border: none;
-    background: #51344D;
-    cursor: pointer;
-    font-size: inherit;
-    font-weight: light;
-    letter-spacing: 1px;
-    color: inherit;
-
-    left: 50%;
-    margin-left: -142px;
-	transition: all 1s ease-in;
-    -webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-    z-index: -100;
-    
-}
-
-.btn:after {
-    content: "";
-    position: absolute;
-    transition: all 0.3s ease 0s;
-
-    z-index: -1;
-}
-.btn:hover,
-.btn:focus {
-  color: #51344D;
-}
-
-
-
-/* Style 4 */
-.btn-4 {
-  overflow: hidden;
-  transition: ease 1s;
-}
-.btn-4:after {
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    height: 0;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-    background-color: #fff;
-    transition: all 0.4s ease 0.2s;
-  color: #51344D;
-}
-.btn-4:hover:after,
-.btn-4:focus:after {
-  height: 200%;
-  opacity: 1;
-  transition: all 0.4s ease 0s;
-}
-.btn-4:hover,
-.btn-4:focus {
-  background-color: transparent;
 }
 
 #ic {
@@ -2158,6 +2088,93 @@ h1 { font-weight: normal; }
   border-width: 10px 10px 0 10px;
   border-color: transparent;
   transform: translate(-50%, 100%);
+}
+
+#scroll {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 902px;
+    margin-top: -69px;
+  
+  
+}
+#main {
+	width: 221px;
+    margin-left: 636px;
+    font-size: 30px;
+    margin-top: -100px;
+}
+
+.demo {
+  transform: rotate(270deg);
+}
+.demo a {
+  padding-top: 80px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: blink 2s infinite;
+  animation: blink 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 
