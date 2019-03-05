@@ -193,6 +193,11 @@ $(window).load(function() {
     }, 2000);
   }, 1000);
 })
+window.setTimeout(function(){
+      $("#scroll").attr("class", "nav done enable");
+    }, 500);
+
+
 // --------------------------------------
 //               Home
 // --------------------------------------  
@@ -205,8 +210,11 @@ var homeCircle2 = t1.circle("60%", "45%", 0);
 var homeCircle3 = t1.circle("70%", "55%", 0);
 var homeCircle4 = t1.circle("53%", "52%", 0);
 var homeCircle5 = t1.circle("43%", "51%", 0);
-$( "<div id='main'>Check Portfolio</div><div id='scroll' class='demo'<a><span></span><span></span><span></span></div>").appendTo( "nav" );
+$( "<div id='main'><small>Check Portfolio</small></div><div id='scroll' class='demo'<a><span></span><span></span><span></span></div>").appendTo( "nav" );
 
+$("#scroll").click(function(){
+  homeToProfile();
+});
 
 
 

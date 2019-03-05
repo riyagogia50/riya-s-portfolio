@@ -585,7 +585,7 @@ th {
 	font-size: 21px;
 	top: 15%;
 	left: 34%;
-	margin-top: -20px;
+	margin-top: -18px;
 	margin-left: -89px;
 	width: 170px
 }
@@ -651,7 +651,7 @@ th {
 	top: 54%;
 	left: 32%;
 	margin-left: -64px;
-	margin-top: -18px;
+	margin-top: -14px;
 	width: 120px
 }
 
@@ -693,12 +693,12 @@ th {
 }
 
 .adobexd {
-	font-size: 12px;
-	top: 66%;
-	left: 89%;
-	margin-left: -63px;
-	margin-top: -11px;
-	width: 120px
+	font-size: 14px;
+    top: 66%;
+    left: 89%;
+    margin-left: -63px;
+    margin-top: -12px;
+    width: 120px;
 }
 
 .git {
@@ -716,7 +716,7 @@ th {
     top: 79%;
     left: 62%;
     margin-left: -64px;
-    margin-top: -20px;
+    margin-top: -22px;
     width: 120px;
 }
 .PSQL {
@@ -1961,7 +1961,7 @@ h1 { font-weight: normal; }
 .social-icons {
     display: block;
     position: absolute;
-    margin-top: -22em;
+    margin-top: -25em;
     margin-left: -3em;
 
 }
@@ -2073,6 +2073,25 @@ h1 { font-weight: normal; }
 .social-icon--github .tooltip:after {
   border-top-color: #4284c0;
 }
+
+.social-icon--resume {
+  background: #4c6496;
+  background: linear-gradient(tint(#4c6496, 5%), shade(#4c6496, 5%));
+  border-bottom: 1px solid shade(#4c6496, 20%);
+  color: tint(#4c6496, 50%);
+}
+.social-icon--resume:hover {
+  color: tint(#4c6496, 80%);
+  text-shadow: 0px 1px 0px shade(#4c6496, 20%);
+}
+.social-icon--resume .tooltip {
+  background: #4c6496;
+  background: linear-gradient(tint(#4c6496, 15%), #4c6496);
+  color: tint(#4c6496, 80%);
+}
+.social-icon--resume .tooltip:after {
+  border-top-color: #4c6496;
+}
 .social-icon i {
   position: relative;
   top: 1px;
@@ -2125,7 +2144,7 @@ h1 { font-weight: normal; }
     position: fixed;
     padding: 19px 80px;
     margin-top: 211px;
- 
+ 		cursor: pointer;
     left: 50%;
     margin-left: 0px;
   
@@ -2147,7 +2166,7 @@ h1 { font-weight: normal; }
     margin-top: 199px;
     font-weight: light;
     left: 50%;
-    margin-left: -177px;
+    margin-left: -189px;
    
 }
 
