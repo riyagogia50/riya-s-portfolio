@@ -1342,7 +1342,7 @@ function detectionRealisationDeOuf(dir, action) {
     $("body").removeClass("item-cat").addClass("brilliant");
      $("button").remove();
      window.setTimeout(function(){
-    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button><button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button>");
+    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button><button id='ic2'><a href='sites/101brilliant/brilliant.html' target='_blank'>View page</a></button>");
     // $("#btn").remove("button").append("{delay=false;}");
   {delay=false;}
   } ,800);
@@ -1403,7 +1403,7 @@ function detectionRealisationDeOuf(dir, action) {
     $("button").remove();
 
     window.setTimeout(function(){
-    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button><button id='ic2'><a href='item-cat sites/101brilliant/brilliant.html' target='_blank'>View page</a></button>");
+    $("#btn").remove("button").append("<button id='ic'><a href='https://github.com/ayseth/brilliant' target='_blank'>Check source code</a></button><button id='ic2'><a href='sites/101brilliant/brilliant.html' target='_blank'>View page</a></button>");
         // $("#btn").remove("button").append("");
      {delay=false;}
       } ,800);
