@@ -207,11 +207,15 @@ var homeCircle4 = t1.circle("53%", "52%", 0);
 var homeCircle5 = t1.circle("43%", "51%", 0);
 $( "<div id='main'>Check Portfolio</div><div id='scroll' class='demo'<a><span></span><span></span><span></span></div>").appendTo( "nav" );
 
-
-
+$("#scroll").click(function() {
+  homeToProfile();
+});
 
 } // END home()
   
+
+
+
 
 function homeToProfile() {
    $( "#main" ).remove();
