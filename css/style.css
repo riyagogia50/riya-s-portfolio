@@ -619,11 +619,11 @@ th {
 
 .cms {
 	font-size: 16px;
-	top: 13%;
-	left: 82%;
-	margin-left: -64px;
-	margin-top: -15px;
-	width: 120px
+    top: 22%;
+    left: 85%;
+    margin-left: -65px;
+    margin-top: -20px;
+    width: 120px;
 }
 
 .python {
@@ -637,11 +637,11 @@ th {
 
 }
 .asp {
-    font-size: 18px;
-    top: 13.5%;
-    left: 60%;
-    margin-left: -57px;
-    margin-top: -57px;
+    font-size: 14px;
+    top: 8%;
+    left: 80%;
+    margin-left: -55px;
+    margin-top: -71px;
     padding-top: 38px;
     width: 106px;
 
@@ -649,11 +649,11 @@ th {
 
 .php {
 	font-size: 22px;
-	top: 32%;
-	left: 88%;
-	margin-left: -63px;
-	margin-top: -13px;
-	width: 120px
+    top: 36%;
+    left: 88%;
+    margin-left: -63px;
+    margin-top: -3px;
+    width: 120px;
 }
 
 .sql {

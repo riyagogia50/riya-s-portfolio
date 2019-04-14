@@ -811,7 +811,7 @@ function skills(delay) {
         });
 
         window.setTimeout(function(){
-          skill_circles("cms", 40, 85, 25, 3);
+          skill_circles("cms", 40, 85, 21, 3);
         }, 100);
 
         window.setTimeout(function(){
@@ -819,7 +819,7 @@ function skills(delay) {
         }, 100);
 
         window.setTimeout(function(){
-          skill_circles("net", 40, 75, 6, 3);
+          skill_circles("net", 40, 80, 6, 3);
         }, 100);
       }
       back_end=false;
