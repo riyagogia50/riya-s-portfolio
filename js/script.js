@@ -807,15 +807,19 @@ function skills(delay) {
     function BackEnd_Hover() {
       if (back_end) {
         window.setTimeout(function(){
-          skill_circles("php", 50, 88, 32, 3);
+          skill_circles("php", 40, 88, 38, 3);
         });
 
         window.setTimeout(function(){
-          skill_circles("cms", 50, 82, 13, 3);
+          skill_circles("cms", 40, 85, 25, 3);
         }, 100);
 
         window.setTimeout(function(){
           skill_circles("Python", 70, 60, 13, 3);
+        }, 100);
+
+        window.setTimeout(function(){
+          skill_circles("net", 40, 75, 6, 3);
         }, 100);
       }
       back_end=false;

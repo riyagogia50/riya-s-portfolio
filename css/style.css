@@ -636,9 +636,19 @@ th {
     width: 106px;
 
 }
+.asp {
+    font-size: 18px;
+    top: 13.5%;
+    left: 60%;
+    margin-left: -57px;
+    margin-top: -57px;
+    padding-top: 38px;
+    width: 106px;
+
+}
 
 .php {
-	font-size: 14px;
+	font-size: 22px;
 	top: 32%;
 	left: 88%;
 	margin-left: -63px;
