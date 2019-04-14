@@ -835,7 +835,7 @@ function skills(delay) {
         });
 
         window.setTimeout(function(){
-          skill_circles("vb", 45, 13, 86, 4);
+          skill_circles("cs", 45, 13, 86, 4);
         }, 100);
 
         window.setTimeout(function(){
