@@ -1969,7 +1969,7 @@ h1 { font-weight: normal; }
 /* Social Icon Mixin */
 /* Social Icons */
 .social-icons {
-    display: block;
+    display: none;
     position: absolute;
     margin-top: -25em;
     margin-left: -3em;
