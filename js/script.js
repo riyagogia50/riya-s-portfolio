@@ -1393,7 +1393,7 @@ $("#ic2").remove();
     window.setTimeout(function(){
       $("#ic2").remove();
       // $("#ic").remove();
-    $("#btn").removeClass("#ic #ic2").append("<a id='ic' href='https://github.com/ayseth/item-catalog' target='_blank'>Check source code</a>");
+    $("#btn").removeClass("#ic #ic2").append("<a id='ic' href='https://vsco.co/riyagogia-12/gallery' target='_blank'>Click here</a>");
     {delay=false;}
     } ,800);
     
